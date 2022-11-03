@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2ebda66-55e2-4b4a-805c-eebdfae68d04" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/crm/qa/testcases/LoanApplyTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/crm/qa/testcases/LoanApplyTestCases.java" afterDir="false" />
-    </list>
+    <list default="true" id="f2ebda66-55e2-4b4a-805c-eebdfae68d04" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,6 +170,14 @@
       <option name="presentableId" value="Default" />
       <updated>1667387608481</updated>
     </task>
+    <task id="LOCAL-00001" summary="Second Commit">
+      <created>1667475067674</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667475067674</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +190,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Second Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
