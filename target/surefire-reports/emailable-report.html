@@ -9,48 +9,33 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">RegressionSuite</th></tr>
-<tr><td><a href="#t0">Testing</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">53,290</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Testing</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">87,453</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testing &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.crm.qa.testcases.LoanApplyTestCases</td><td><a href="#m0">TC002_FillCustomerDetails</a></td><td rowspan="1">1667546113907</td><td rowspan="1">6357</td></tr><tr class="failedeven"><td><a href="#m1">TC003_ToValidateSelectOfferIsOpen</a></td><td rowspan="1">1667546120277</td><td rowspan="1">40024</td></tr><tr><th colspan="4">Testing &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.crm.qa.testcases.LoanApplyTestCases</td><td><a href="#m2">TC001_ClickOnApplyBttn</a></td><td rowspan="1">1667546107131</td><td rowspan="1">6774</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testing &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.crm.qa.testcases.LoanApplyTestCases</td><td><a href="#m0">TC002_FillCustomerDetails</a></td><td rowspan="1">1667562399466</td><td rowspan="1">7217</td></tr><tr class="failedeven"><td><a href="#m1">TC003_ToValidateSelectOfferIsOpen</a></td><td rowspan="1">1667562406696</td><td rowspan="1">40018</td></tr><tr><th colspan="4">Testing &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.crm.qa.testcases.LoanApplyTestCases</td><td><a href="#m2">TC001_ClickOnApplyBttn</a></td><td rowspan="1">1667562359298</td><td rowspan="1">40166</td></tr></tbody>
 </table>
-<h2>Testing</h2><h3 id="m0">com.crm.qa.testcases.LoanApplyTestCases#TC002_FillCustomerDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;select id=&quot;loanPurpose&quot; validations=&quot;empty&quot; name=&quot;loanPurpose&quot; title=&quot;Loan Purpose&quot; tabindex=&quot;5&quot;&gt;...&lt;/select&gt; is not clickable at point (938, 105). Other element would receive the click: &lt;div class=&quot;blockscreen&quot; style=&quot;height: 1811px;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=107.0.5304.88)
+<h2>Testing</h2><h3 id="m0">com.crm.qa.testcases.LoanApplyTestCases#TC002_FillCustomerDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (2e060c7e0b1bb475d79ce79b5ab6a46f)] -&gt; xpath: //*[@id=&apos;check-email&apos;]/span] (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;TRANTOR-LP452&apos;, ip: &apos;192.168.0.140&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ae16ce5c900e7aac102ebeab45e8dc67, clickElement {id=c7bf5486-0ce3-4330-a0c5-2b1d6b542147}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61760}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61760/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ae16ce5c900e7aac102ebeab45e8dc67)] -&gt; id: loanPurpose]
-Session ID: ae16ce5c900e7aac102ebeab45e8dc67
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:377)
-	at com.sun.proxy.$Proxy19.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:390)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at com.crm.qa.pages.ApplyPage.SelectLoanPurpose(ApplyPage.java:83)
-	at com.crm.qa.testcases.LoanApplyTestCases.TC002_FillCustomerDetails(LoanApplyTestCases.java:37)
+System info: host: &apos;TRANTOR-LP452&apos;, ip: &apos;192.168.184.46&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62346}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62346/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e060c7e0b1bb475d79ce79b5ab6a46f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.crm.qa.pages.ApplyPage.EnterEmailId(ApplyPage.java:124)
+	at com.crm.qa.testcases.LoanApplyTestCases.TC002_FillCustomerDetails(LoanApplyTestCases.java:43)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">com.crm.qa.testcases.LoanApplyTestCases#TC003_ToValidateSelectOfferIsOpen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@class=&apos;choose&apos;])[1]&quot;}
   (Session info: chrome=107.0.5304.88)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;TRANTOR-LP452&apos;, ip: &apos;192.168.0.140&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+System info: host: &apos;TRANTOR-LP452&apos;, ip: &apos;192.168.184.46&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ae16ce5c900e7aac102ebeab45e8dc67, findElement {using=xpath, value=(//span[@class=&apos;choose&apos;])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61760}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61760/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ae16ce5c900e7aac102ebeab45e8dc67
+Command: [2e060c7e0b1bb475d79ce79b5ab6a46f, findElement {using=xpath, value=(//span[@class=&apos;choose&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62346}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62346/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e060c7e0b1bb475d79ce79b5ab6a46f
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -73,7 +58,7 @@ Session ID: ae16ce5c900e7aac102ebeab45e8dc67
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">com.crm.qa.testcases.LoanApplyTestCases#TC001_ClickOnApplyBttn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
