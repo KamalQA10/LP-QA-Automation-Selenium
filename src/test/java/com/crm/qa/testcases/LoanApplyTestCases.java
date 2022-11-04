@@ -10,7 +10,7 @@ import CommonAssertions.Assertions;
 
 @Test
 public class LoanApplyTestCases extends TestBase {
-//kkkkkkkk
+//kkkkkkkkgggggggggg
 		ApplyPage applypage;
 		SelectAnOfferPage selectAnOfferPage;
 
