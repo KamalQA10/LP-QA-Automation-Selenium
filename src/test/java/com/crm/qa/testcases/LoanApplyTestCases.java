@@ -10,7 +10,7 @@ import CommonAssertions.Assertions;
 
 @Test
 public class LoanApplyTestCases extends TestBase {
-//kamal
+
 		ApplyPage applypage;
 		SelectAnOfferPage selectAnOfferPage;
 
@@ -33,8 +33,9 @@ public class LoanApplyTestCases extends TestBase {
 		}
 
 		public void TC002_FillCustomerDetails() throws InterruptedException  {
-			applypage.EnterLoanAmount();
+
 			applypage.SelectLoanPurpose();
+			applypage.EnterLoanAmount();
 			applypage.EnterFirstName();
 			applypage.EnterLastName();
 			applypage.EnterDateOfBirth();

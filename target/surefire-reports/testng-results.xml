@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-03T13:20:07 IST" name="RegressionSuite" finished-at="2022-11-03T13:20:59 IST" duration-ms="52426">
+  <suite started-at="2022-11-04T12:45:07 IST" name="RegressionSuite" finished-at="2022-11-04T12:46:00 IST" duration-ms="53290">
     <groups>
     </groups>
-    <test started-at="2022-11-03T13:20:07 IST" name="Testing" finished-at="2022-11-03T13:20:59 IST" duration-ms="52426">
+    <test started-at="2022-11-04T12:45:07 IST" name="Testing" finished-at="2022-11-04T12:46:00 IST" duration-ms="53290">
       <class name="com.crm.qa.testcases.LoanApplyTestCases">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoanApplyTestCases@3427b02d]" started-at="2022-11-03T13:20:01 IST" name="setUp" finished-at="2022-11-03T13:20:07 IST" duration-ms="5515" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoanApplyTestCases@3427b02d]" started-at="2022-11-04T12:45:01 IST" name="setUp" finished-at="2022-11-04T12:45:07 IST" duration-ms="5478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC001_ClickOnApplyBttn()[pri:0, instance:com.crm.qa.testcases.LoanApplyTestCases@3427b02d]" started-at="2022-11-03T13:20:07 IST" name="TC001_ClickOnApplyBttn" finished-at="2022-11-03T13:20:12 IST" duration-ms="5659" status="PASS">
+        <test-method signature="TC001_ClickOnApplyBttn()[pri:0, instance:com.crm.qa.testcases.LoanApplyTestCases@3427b02d]" started-at="2022-11-04T12:45:07 IST" name="TC001_ClickOnApplyBttn" finished-at="2022-11-04T12:45:13 IST" duration-ms="6774" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC001_ClickOnApplyBttn -->
-        <test-method signature="TC002_FillCustomerDetails()[pri:0, instance:com.crm.qa.testcases.LoanApplyTestCases@3427b02d]" started-at="2022-11-03T13:20:12 IST" name="TC002_FillCustomerDetails" finished-at="2022-11-03T13:20:19 IST" duration-ms="6669" status="FAIL">
+        <test-method signature="TC002_FillCustomerDetails()[pri:0, instance:com.crm.qa.testcases.LoanApplyTestCases@3427b02d]" started-at="2022-11-04T12:45:13 IST" name="TC002_FillCustomerDetails" finished-at="2022-11-04T12:45:20 IST" duration-ms="6357" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <input lp-partner="" number-format="0,0" autocomplete="off" type="tel" name="loanAmount" pattern="[0-9]*" validations="empty|_min:2000|_max:36500" class="form-control lp-loanamount validation-group" placeholder="2,000 to 36,500" tabindex="3" id="loanAmount"> is not clickable at point (614, 105). Other element would receive the click: <div class="blockscreen" style="height: 1811px;"></div>
-  (Session info: chrome=106.0.5249.103)
+              <![CDATA[element click intercepted: Element <select id="loanPurpose" validations="empty" name="loanPurpose" title="Loan Purpose" tabindex="5">...</select> is not clickable at point (938, 105). Other element would receive the click: <div class="blockscreen" style="height: 1811px;"></div>
+  (Session info: chrome=107.0.5304.88)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'TRANTOR-LP452', ip: '192.168.0.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0c61e74f4ff0e3a8afbfeaf7072c3e04, clickElement {id=f95d72c9-c60d-4e5f-b4c8-aa16e1766671}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52789}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52789/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (0c61e74f4ff0e3a8afbfeaf7072c3e04)] -> id: loanAmount]
-Session ID: 0c61e74f4ff0e3a8afbfeaf7072c3e04]]>
+Command: [ae16ce5c900e7aac102ebeab45e8dc67, clickElement {id=c7bf5486-0ce3-4330-a0c5-2b1d6b542147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61760}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61760/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ae16ce5c900e7aac102ebeab45e8dc67)] -> id: loanPurpose]
+Session ID: ae16ce5c900e7aac102ebeab45e8dc67]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input lp-partner="" number-format="0,0" autocomplete="off" type="tel" name="loanAmount" pattern="[0-9]*" validations="empty|_min:2000|_max:36500" class="form-control lp-loanamount validation-group" placeholder="2,000 to 36,500" tabindex="3" id="loanAmount"> is not clickable at point (614, 105). Other element would receive the click: <div class="blockscreen" style="height: 1811px;"></div>
-  (Session info: chrome=106.0.5249.103)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <select id="loanPurpose" validations="empty" name="loanPurpose" title="Loan Purpose" tabindex="5">...</select> is not clickable at point (938, 105). Other element would receive the click: <div class="blockscreen" style="height: 1811px;"></div>
+  (Session info: chrome=107.0.5304.88)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'TRANTOR-LP452', ip: '192.168.0.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0c61e74f4ff0e3a8afbfeaf7072c3e04, clickElement {id=f95d72c9-c60d-4e5f-b4c8-aa16e1766671}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52789}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52789/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (0c61e74f4ff0e3a8afbfeaf7072c3e04)] -> id: loanAmount]
-Session ID: 0c61e74f4ff0e3a8afbfeaf7072c3e04
+Command: [ae16ce5c900e7aac102ebeab45e8dc67, clickElement {id=c7bf5486-0ce3-4330-a0c5-2b1d6b542147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61760}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61760/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ae16ce5c900e7aac102ebeab45e8dc67)] -> id: loanPurpose]
+Session ID: ae16ce5c900e7aac102ebeab45e8dc67
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -65,8 +65,8 @@ at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegating
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 at com.sun.proxy.$Proxy18.click(Unknown Source)
-at com.crm.qa.pages.ApplyPage.EnterLoanAmount(ApplyPage.java:75)
-at com.crm.qa.testcases.LoanApplyTestCases.TC002_FillCustomerDetails(LoanApplyTestCases.java:36)
+at com.crm.qa.pages.ApplyPage.SelectLoanPurpose(ApplyPage.java:83)
+at com.crm.qa.testcases.LoanApplyTestCases.TC002_FillCustomerDetails(LoanApplyTestCases.java:37)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -88,29 +88,29 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC002_FillCustomerDetails -->
-        <test-method signature="TC003_ToValidateSelectOfferIsOpen()[pri:0, instance:com.crm.qa.testcases.LoanApplyTestCases@3427b02d]" started-at="2022-11-03T13:20:19 IST" name="TC003_ToValidateSelectOfferIsOpen" finished-at="2022-11-03T13:20:59 IST" duration-ms="40056" status="FAIL">
+        <test-method signature="TC003_ToValidateSelectOfferIsOpen()[pri:0, instance:com.crm.qa.testcases.LoanApplyTestCases@3427b02d]" started-at="2022-11-04T12:45:20 IST" name="TC003_ToValidateSelectOfferIsOpen" finished-at="2022-11-04T12:46:00 IST" duration-ms="40024" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='choose'])[1]"}
-  (Session info: chrome=106.0.5249.103)
+  (Session info: chrome=107.0.5304.88)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'TRANTOR-LP452', ip: '192.168.0.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0c61e74f4ff0e3a8afbfeaf7072c3e04, findElement {using=xpath, value=(//span[@class='choose'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52789}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52789/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c61e74f4ff0e3a8afbfeaf7072c3e04]]>
+Command: [ae16ce5c900e7aac102ebeab45e8dc67, findElement {using=xpath, value=(//span[@class='choose'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61760}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61760/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ae16ce5c900e7aac102ebeab45e8dc67]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='choose'])[1]"}
-  (Session info: chrome=106.0.5249.103)
+  (Session info: chrome=107.0.5304.88)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'TRANTOR-LP452', ip: '192.168.0.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0c61e74f4ff0e3a8afbfeaf7072c3e04, findElement {using=xpath, value=(//span[@class='choose'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52789}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52789/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c61e74f4ff0e3a8afbfeaf7072c3e04
+Command: [ae16ce5c900e7aac102ebeab45e8dc67, findElement {using=xpath, value=(//span[@class='choose'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61760}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61760/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ae16ce5c900e7aac102ebeab45e8dc67
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -138,7 +138,7 @@ at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(Def
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
 at com.crm.qa.pages.SelectAnOfferPage.isChooseAnOfferBtnDisplayed(SelectAnOfferPage.java:30)
-at com.crm.qa.testcases.LoanApplyTestCases.TC003_ToValidateSelectOfferIsOpen(LoanApplyTestCases.java:60)
+at com.crm.qa.testcases.LoanApplyTestCases.TC003_ToValidateSelectOfferIsOpen(LoanApplyTestCases.java:61)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,7 +160,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC003_ToValidateSelectOfferIsOpen -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoanApplyTestCases@3427b02d]" started-at="2022-11-03T13:20:59 IST" name="tearDown" finished-at="2022-11-03T13:20:59 IST" duration-ms="423" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoanApplyTestCases@3427b02d]" started-at="2022-11-04T12:46:00 IST" name="tearDown" finished-at="2022-11-04T12:46:00 IST" duration-ms="465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

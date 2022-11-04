@@ -72,7 +72,9 @@ public class ApplyPage extends TestBase {
 	}
 	public void EnterLoanAmount() {
 		if (LoanAmount.isEnabled()) {
-			LoanAmount.click();
+			Actions actions = new Actions(driver);
+			actions.moveToElement(LoanAmount).click().build().perform();
+			//LoanAmount.click();
 			LoanAmount.sendKeys(properties.getProperty("loanAmount"));
 		}
 	}
