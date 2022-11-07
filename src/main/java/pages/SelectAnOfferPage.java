@@ -1,6 +1,9 @@
 package pages;
 
 import java.time.Duration;
+
+import org.openqa.selenium.ElementNotInteractableException;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -26,12 +29,14 @@ public class SelectAnOfferPage extends TestBase {
 		return ChooseAnOfferBtn.isDisplayed();
 	}
 	
-	public void closebtnEnter4digitCode() throws InterruptedException {
+	public void closebtnEnter4digitCode() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
-		wait.until( ExpectedConditions.elementToBeClickable(ClosebtnEnter4digitCode));
-		if(ClosebtnEnter4digitCode.isDisplayed()) {
-			ClosebtnEnter4digitCode.click();
-		}
+		try{
+		      wait
+		      .ignoring(ElementNotInteractableException.class, NoSuchElementException.class)
+		      .until(ExpectedConditions.visibilityOf(ClosebtnEnter4digitCode))
+		      .click();
+		} catch (Exception ignored){ }
 	}
 	
 	public void ChooseAnOfferBttn() {
@@ -41,10 +46,4 @@ public class SelectAnOfferPage extends TestBase {
 		}
 	}
 
-	public void offerSelectedTickBttn() {
-		//wait.until( ExpectedConditions.visibilityOf(OfferSelectedTickBttn));
-		if(ClosebtnEnter4digitCode.isDisplayed()){
-			ClosebtnEnter4digitCode.click();
-		}
-	}
 }

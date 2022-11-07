@@ -76,6 +76,7 @@ public class LoanApplyTestCases extends TestBase {
 		
 		public void TC005_ToValidateConnectPage(){
 			Assertions.verifyPageIsOpenedSucessfully("Connect");
+			connectPage.ContinueBtn();
 		}
 
 		@AfterSuite(alwaysRun = true)

@@ -9,14 +9,46 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">RegressionSuite</th></tr>
-<tr><td><a href="#t0">Testing</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">124,271</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Testing</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">101,720</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testing &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">testcases.LoanApplyTestCases</td><td><a href="#m0">TC001_ClickOnApplyBttn</a></td><td rowspan="1">1667816084964</td><td rowspan="1">4034</td></tr><tr class="passedeven"><td><a href="#m1">TC002_FillCustomerDetails</a></td><td rowspan="1">1667816088999</td><td rowspan="1">52173</td></tr><tr class="passedeven"><td><a href="#m2">TC003_ToValidateSelectOfferIsOpen</a></td><td rowspan="1">1667816141173</td><td rowspan="1">67781</td></tr><tr class="passedeven"><td><a href="#m3">TC004_ToValidateBankInformationPage</a></td><td rowspan="1">1667816208955</td><td rowspan="1">160</td></tr><tr class="passedeven"><td><a href="#m4">TC005_ToValidateConnectPage</a></td><td rowspan="1">1667816209116</td><td rowspan="1">6</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testing &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.LoanApplyTestCases</td><td><a href="#m0">TC005_ToValidateConnectPage</a></td><td rowspan="1">1667817871411</td><td rowspan="1">30</td></tr><tr><th colspan="4">Testing &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">testcases.LoanApplyTestCases</td><td><a href="#m1">TC001_ClickOnApplyBttn</a></td><td rowspan="1">1667817769764</td><td rowspan="1">4620</td></tr><tr class="passedeven"><td><a href="#m2">TC002_FillCustomerDetails</a></td><td rowspan="1">1667817774387</td><td rowspan="1">36933</td></tr><tr class="passedeven"><td><a href="#m3">TC003_ToValidateSelectOfferIsOpen</a></td><td rowspan="1">1667817811321</td><td rowspan="1">59902</td></tr><tr class="passedeven"><td><a href="#m4">TC004_ToValidateBankInformationPage</a></td><td rowspan="1">1667817871224</td><td rowspan="1">186</td></tr></tbody>
 </table>
-<h2>Testing</h2><h3 id="m0">testcases.LoanApplyTestCases#TC001_ClickOnApplyBttn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcases.LoanApplyTestCases#TC002_FillCustomerDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testcases.LoanApplyTestCases#TC003_ToValidateSelectOfferIsOpen</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testcases.LoanApplyTestCases#TC004_ToValidateBankInformationPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testcases.LoanApplyTestCases#TC005_ToValidateConnectPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Testing</h2><h3 id="m0">testcases.LoanApplyTestCases#TC005_ToValidateConnectPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //span[@class=&apos;Button-module_flex__2To5J because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//span[@class=&apos;Button-module_flex__2To5J&apos; is not a valid XPath expression.
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;TRANTOR-LP452&apos;, ip: &apos;192.168.0.140&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [072e96941df067a8e64b2edfafc755d7, findElement {using=xpath, value=//span[@class=&apos;Button-module_flex__2To5J}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56714/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 072e96941df067a8e64b2edfafc755d7
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy14.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
+	at pages.ConnectPage.ContinueBtn(ConnectPage.java:21)
+	at testcases.LoanApplyTestCases.TC005_ToValidateConnectPage(LoanApplyTestCases.java:79)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.LoanApplyTestCases#TC001_ClickOnApplyBttn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.LoanApplyTestCases#TC002_FillCustomerDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.LoanApplyTestCases#TC003_ToValidateSelectOfferIsOpen</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.LoanApplyTestCases#TC004_ToValidateBankInformationPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

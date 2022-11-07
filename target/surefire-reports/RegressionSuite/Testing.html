@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Testing</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 07 15:44:44 IST 2022</td>
+<td>Started on:</td><td>Mon Nov 07 16:12:49 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>124 seconds (124271 ms)</td>
+<tr><td>Total time:</td><td>101 seconds (101720 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,105 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.LoanApplyTestCases.TC005_ToValidateConnectPage()'><b>TC005_ToValidateConnectPage</b><br>Test class: testcases.LoanApplyTestCases</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //span[@class=&apos;Button-module_flex__2To5J because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//span[@class=&apos;Button-module_flex__2To5J&apos; is not a valid XPath expression.
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;TRANTOR-LP452&apos;, ip: &apos;192.168.0.140&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [072e96941df067a8e64b2edfafc755d7, findElement {using=xpath, value=//span[@class=&apos;Button-module_flex__2To5J}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56714/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 072e96941df067a8e64b2edfafc755d7
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy14.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
+	at pages.ConnectPage.ContinueBtn(ConnectPage.java:21)
+	at testcases.LoanApplyTestCases.TC005_ToValidateConnectPage(LoanApplyTestCases.java:79)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace714785192", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace714785192'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //span[@class=&apos;Button-module_flex__2To5J because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//span[@class=&apos;Button-module_flex__2To5J&apos; is not a valid XPath expression.
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;TRANTOR-LP452&apos;, ip: &apos;192.168.0.140&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [072e96941df067a8e64b2edfafc755d7, findElement {using=xpath, value=//span[@class=&apos;Button-module_flex__2To5J}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56714/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 072e96941df067a8e64b2edfafc755d7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy14.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
+	at pages.ConnectPage.ContinueBtn(ConnectPage.java:21)
+	at testcases.LoanApplyTestCases.TC005_ToValidateConnectPage(LoanApplyTestCases.java:79)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>testcases.LoanApplyTestCases@41fbdac4</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,19 +175,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.LoanApplyTestCases.TC004_ToValidateBankInformationPage()'><b>TC004_ToValidateBankInformationPage</b><br>Test class: testcases.LoanApplyTestCases</td>
+<td title='testcases.LoanApplyTestCases.TC003_ToValidateSelectOfferIsOpen()'><b>TC003_ToValidateSelectOfferIsOpen</b><br>Test class: testcases.LoanApplyTestCases</td>
 <td></td>
-<td>0</td>
-<td>testcases.LoanApplyTestCases@41fbdac4</td></tr>
-<tr>
-<td title='testcases.LoanApplyTestCases.TC005_ToValidateConnectPage()'><b>TC005_ToValidateConnectPage</b><br>Test class: testcases.LoanApplyTestCases</td>
-<td></td>
-<td>0</td>
-<td>testcases.LoanApplyTestCases@41fbdac4</td></tr>
-<tr>
-<td title='testcases.LoanApplyTestCases.TC002_FillCustomerDetails()'><b>TC002_FillCustomerDetails</b><br>Test class: testcases.LoanApplyTestCases</td>
-<td></td>
-<td>52</td>
+<td>59</td>
 <td>testcases.LoanApplyTestCases@41fbdac4</td></tr>
 <tr>
 <td title='testcases.LoanApplyTestCases.TC001_ClickOnApplyBttn()'><b>TC001_ClickOnApplyBttn</b><br>Test class: testcases.LoanApplyTestCases</td>
@@ -96,9 +185,14 @@ function toggleAllBoxes() {
 <td>4</td>
 <td>testcases.LoanApplyTestCases@41fbdac4</td></tr>
 <tr>
-<td title='testcases.LoanApplyTestCases.TC003_ToValidateSelectOfferIsOpen()'><b>TC003_ToValidateSelectOfferIsOpen</b><br>Test class: testcases.LoanApplyTestCases</td>
+<td title='testcases.LoanApplyTestCases.TC002_FillCustomerDetails()'><b>TC002_FillCustomerDetails</b><br>Test class: testcases.LoanApplyTestCases</td>
 <td></td>
-<td>67</td>
+<td>36</td>
+<td>testcases.LoanApplyTestCases@41fbdac4</td></tr>
+<tr>
+<td title='testcases.LoanApplyTestCases.TC004_ToValidateBankInformationPage()'><b>TC004_ToValidateBankInformationPage</b><br>Test class: testcases.LoanApplyTestCases</td>
+<td></td>
+<td>0</td>
 <td>testcases.LoanApplyTestCases@41fbdac4</td></tr>
 </table><p>
 </body>
