@@ -5,9 +5,7 @@ import org.testng.annotations.*;
 import CommonAssertions.Assertions;
 import base.*;
 import common.utilities.WaitUtils;
-import pages.ApplyPage;
-import pages.BankInformationPage;
-import pages.SelectAnOfferPage;
+import pages.*;
 
 @Test
 public class LoanApplyTestCases extends TestBase {
@@ -15,6 +13,7 @@ public class LoanApplyTestCases extends TestBase {
 		ApplyPage applypage;
 		SelectAnOfferPage selectAnOfferPage;
 		BankInformationPage bankInformationPage;
+		ConnectPage connectPage;
 
 		public LoanApplyTestCases() {
 			super();
@@ -26,6 +25,7 @@ public class LoanApplyTestCases extends TestBase {
 			applypage = new ApplyPage();
 			selectAnOfferPage = new SelectAnOfferPage();
 			bankInformationPage = new BankInformationPage();
+			connectPage = new ConnectPage();
 		}
 
 		public void TC001_ClickOnApplyBttn(){
@@ -72,6 +72,10 @@ public class LoanApplyTestCases extends TestBase {
 			boolean flag = bankInformationPage.isCONNECTYOURBANKACCOUNTNOWDisplayed();
 			Assertions.verifyButtonIsDisplayingOrNot(flag);
 			bankInformationPage.cONNECTYOURBANKACCOUNTNOW();
+		}
+		
+		public void TC005_ToValidateConnectPage(){
+			Assertions.verifyPageIsOpenedSucessfully("Connect");
 		}
 
 		@AfterSuite(alwaysRun = true)

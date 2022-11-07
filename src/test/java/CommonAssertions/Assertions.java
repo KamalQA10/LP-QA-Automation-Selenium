@@ -1,9 +1,6 @@
 package CommonAssertions;
 
 import base.TestBase;
-import common.utilities.WaitUtils;
-import pages.SelectAnOfferPage;
-
 import static org.testng.AssertJUnit.assertTrue;
 
 public class Assertions extends TestBase {

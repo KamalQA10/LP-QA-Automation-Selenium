@@ -3,15 +3,15 @@
 
 <suite name="RegressionSuite" thread-count="3" parallel="classes">
 	<listeners>
-		<listener class-name="com.crm.qa.reports.ExtentReporterNG"></listener>
+		<listener class-name="reports.ExtentReporterNG"></listener>
 		<listener
-			class-name="com.crm.qa.utilities.AnnotationTransformer"></listener>
+			class-name="common.utilities.AnnotationTransformer"></listener>
 	</listeners>
 
 	<test name="Testing">
 		<!-- <groups> <run> <exclude name = "Functionality" /> </run> </groups> -->
 		<classes>
-			<class name="com.crm.qa.testcases.LoanApplyTestCases"></class>
+			<class name="testcases.LoanApplyTestCases"></class>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.TestBase;
-import common.utilities.WaitUtils;
 
 public class BankInformationPage extends TestBase {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
@@ -20,7 +19,7 @@ public class BankInformationPage extends TestBase {
 	@FindBy(xpath = "(//div[@class='bank-info-card']/img)") public static WebElement CONNECTYOURBANKACCOUNTNOW ;
 	
 	public boolean isCONNECTYOURBANKACCOUNTNOWDisplayed() {
-		wait.until( ExpectedConditions.visibilityOf(CONNECTYOURBANKACCOUNTNOW));
+		wait.until( ExpectedConditions.elementToBeClickable(CONNECTYOURBANKACCOUNTNOW));
 		return CONNECTYOURBANKACCOUNTNOW.isDisplayed();
 	}
 	

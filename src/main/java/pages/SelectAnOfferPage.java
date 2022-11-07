@@ -27,7 +27,8 @@ public class SelectAnOfferPage extends TestBase {
 	}
 	
 	public void closebtnEnter4digitCode() throws InterruptedException {
-		Thread.sleep(9000);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
+		wait.until( ExpectedConditions.elementToBeClickable(ClosebtnEnter4digitCode));
 		if(ClosebtnEnter4digitCode.isDisplayed()) {
 			ClosebtnEnter4digitCode.click();
 		}

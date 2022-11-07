@@ -1,22 +1,14 @@
 package common.utilities;
 
-import com.google.common.base.Function;
-
 import base.TestBase;
 
 import java.time.Duration;
-import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 
 public class WaitUtils extends TestBase {
@@ -38,7 +30,8 @@ public class WaitUtils extends TestBase {
         wait.until(ExpectedConditions.visibilityOf(element)); // wait for loader to appear
     }
     
-    public static void pageLoadWait() {
+    @SuppressWarnings("deprecation")
+	public static void pageLoadWait() {
     	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
     

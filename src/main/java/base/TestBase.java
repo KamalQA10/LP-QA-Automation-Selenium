@@ -19,10 +19,10 @@ import org.openqa.selenium.support.events.WebDriverListener;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import common.utilities.SeleniumActions;
 import common.utilities.TestUtils;
 
+@SuppressWarnings("deprecation")
 public class TestBase {
 
 	protected static WebDriver driver;
@@ -42,7 +42,7 @@ public class TestBase {
 	public TestBase() {
 		try {
 			properties = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/com/crm/qa/config/config.properties");
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/configurations/config.properties");
 			properties.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -52,7 +52,6 @@ public class TestBase {
 		}
 	}
 
-	@SuppressWarnings("deprecation")
 	protected static void initializaton() {
 		String browserName = properties.getProperty("browser");
 		driver = getDriver(browserName);
