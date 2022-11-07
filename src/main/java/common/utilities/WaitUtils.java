@@ -1,7 +1,8 @@
-package com.crm.qa.utilities;
+package common.utilities;
 
-import com.crm.qa.base.TestBase;
 import com.google.common.base.Function;
+
+import base.TestBase;
 
 import java.time.Duration;
 import java.util.NoSuchElementException;

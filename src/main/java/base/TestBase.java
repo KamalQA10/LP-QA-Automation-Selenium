@@ -1,4 +1,4 @@
-package com.crm.qa.base;
+package base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -20,8 +20,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import com.crm.qa.utilities.SeleniumActions;
-import com.crm.qa.utilities.TestUtils;
+import common.utilities.SeleniumActions;
+import common.utilities.TestUtils;
 
 public class TestBase {
 

@@ -1,4 +1,4 @@
-package com.crm.qa.testdata;
+package exl.testdata;
 
 import java.io.BufferedReader;
 import java.io.File;

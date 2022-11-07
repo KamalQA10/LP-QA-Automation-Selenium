@@ -1,10 +1,10 @@
-package com.crm.qa.utilities;
+package common.utilities;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-import com.crm.qa.base.TestBase;
+import base.TestBase;
 
 public class SeleniumActions extends TestBase {
 

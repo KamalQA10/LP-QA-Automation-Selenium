@@ -1,4 +1,4 @@
-package com.crm.qa.pages;
+package pages;
 
 import java.time.Duration;
 import org.openqa.selenium.WebElement;
@@ -7,8 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.crm.qa.base.TestBase;
-import com.crm.qa.utilities.WaitUtils;
+import base.TestBase;
+import common.utilities.WaitUtils;
 
 public class BankInformationPage extends TestBase {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));

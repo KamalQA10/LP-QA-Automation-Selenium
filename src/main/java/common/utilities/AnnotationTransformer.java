@@ -1,4 +1,4 @@
-package com.crm.qa.utilities;
+package common.utilities;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;

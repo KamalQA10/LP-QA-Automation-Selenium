@@ -1,15 +1,13 @@
-package com.crm.qa.testcases;
-
-import java.util.concurrent.TimeUnit;
+package testcases;
 
 import org.testng.annotations.*;
-import com.crm.qa.base.*;
-import com.crm.qa.pages.ApplyPage;
-import com.crm.qa.pages.BankInformationPage;
-import com.crm.qa.pages.SelectAnOfferPage;
-import com.crm.qa.utilities.WaitUtils;
 
 import CommonAssertions.Assertions;
+import base.*;
+import common.utilities.WaitUtils;
+import pages.ApplyPage;
+import pages.BankInformationPage;
+import pages.SelectAnOfferPage;
 
 @Test
 public class LoanApplyTestCases extends TestBase {
@@ -27,6 +25,7 @@ public class LoanApplyTestCases extends TestBase {
 			initializaton();
 			applypage = new ApplyPage();
 			selectAnOfferPage = new SelectAnOfferPage();
+			bankInformationPage = new BankInformationPage();
 		}
 
 		public void TC001_ClickOnApplyBttn(){
@@ -70,9 +69,6 @@ public class LoanApplyTestCases extends TestBase {
 		}
 		
 		public void TC004_ToValidateBankInformationPage(){
-			//WaitUtils.pageLoadWait();
-			//WaitUtils.pageLoadWait();
-			//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
 			boolean flag = bankInformationPage.isCONNECTYOURBANKACCOUNTNOWDisplayed();
 			Assertions.verifyButtonIsDisplayingOrNot(flag);
 			bankInformationPage.cONNECTYOURBANKACCOUNTNOW();

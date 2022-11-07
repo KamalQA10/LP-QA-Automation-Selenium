@@ -1,4 +1,4 @@
-package com.crm.qa.reports;
+package reports;
 
 import java.util.Calendar;
 import java.util.Date;
