@@ -9,10 +9,9 @@
     <classes>
       <class name="com.crm.qa.testcases.LoanApplyTestCases">
         <methods>
-          <include name="TC002_FillCustomerDetails"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="TC003_ToValidateSelectOfferIsOpen"/>
+          <include name="TC004_ToValidateBankInformationPage"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.LoanApplyTestCases -->
     </classes>

@@ -37,4 +37,8 @@ public class WaitUtils extends TestBase {
         wait.until(ExpectedConditions.visibilityOf(element)); // wait for loader to appear
     }
     
+    public static void pageLoadWait() {
+    	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    }
+    
 }

@@ -13,8 +13,6 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.crm.qa.utilities.*;
-import com.google.common.base.Function;
-
 import com.crm.qa.base.TestBase;
 
 public class ApplyPage extends TestBase {
@@ -37,10 +35,11 @@ public class ApplyPage extends TestBase {
 	@FindBy(id = "lastName") WebElement LastName;
 	@FindBy(id = "dob") WebElement DOB;
 	@FindBy(id = "phone") WebElement PhoneNumber;
+	@FindBy(xpath = "//*[@class='message-validation phoneVerification col-xs-12 hide-error ValidationFail']") WebElement InvalidPhoneError;
 	@FindBy(id = "email") WebElement emailId;
 	@FindBy(xpath = "//*[@id='check-email']") WebElement CheckEmail;
 	@FindBy(xpath = "//img[@class='checking-email']") WebElement emailIdLoader;
-	@FindBy(xpath = "//*[@id='check-email']/span") WebElement checkTickEmail;
+	@FindBy(xpath = "//*[@id='check-email']") WebElement checkTickEmail;
 	@FindBy(id = "check-email")WebElement EmailCheck;
 	@FindBy(id = "google-addres") WebElement address;
 	@FindBy(id = "unit") WebElement addressOptional;
@@ -72,85 +71,78 @@ public class ApplyPage extends TestBase {
 	}
 	public void EnterLoanAmount() {
 		if (LoanAmount.isEnabled()) {
-			Actions actions = new Actions(driver);
-			actions.moveToElement(LoanAmount).click().build().perform();
-			//LoanAmount.click();
+			SeleniumActions.ClickAction(LoanAmount);
 			LoanAmount.sendKeys(properties.getProperty("loanAmount"));
 		}
 	}
 	public void SelectLoanPurpose() {
 		if (LoanPurpose.isEnabled()) {
-			LoanPurpose.click();
-			//WaitUtils.JsExecutor(LoanPurpose);
+			SeleniumActions.ClickAction(LoanPurpose);
 			SeleniumActions.selectbyText(LoanPurpose , properties.getProperty("loanPurpose"));
 		}
 	}
 	
 	public void EnterFirstName() {
 		if (FirstName.isEnabled()) {
-			FirstName.clear();
-			FirstName.click();
+			SeleniumActions.ClickAction(FirstName);
 			FirstName.sendKeys(properties.getProperty("firstName"));
 		}
 	}
 	public void EnterLastName() {
 		if (LastName.isEnabled()) {
-			LastName.clear();
-			LastName.click();
+			SeleniumActions.ClickAction(LastName);
 			LastName.sendKeys(properties.getProperty("lastName"));
 		}
 	}
 	public void EnterDateOfBirth() {
 		if (DOB.isEnabled()) {
-			DOB.clear();
-			DOB.click();
+			SeleniumActions.ClickAction(DOB);
 			DOB.sendKeys(properties.getProperty("dateOfBirth"));
 		}
 	}
 	public void EnterPhoneNumber() {
 		if (PhoneNumber.isEnabled()) {
 			PhoneNumber.clear();
-			PhoneNumber.click();
+			SeleniumActions.ClickAction(PhoneNumber);
 			PhoneNumber.sendKeys(properties.getProperty("phone"));
+			
 		}
 	}
 	public void EnterEmailId() {
 		if (emailId.isEnabled()) {
-			emailId.clear();
 			emailId.sendKeys(properties.getProperty("email"));
-			emailId.click();
-			CheckEmail.click();
+			SeleniumActions.ClickAction(emailId);
+			SeleniumActions.ClickAction(CheckEmail);
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5)); 
 			wait.until( ExpectedConditions.visibilityOf(checkTickEmail));
 		}
 	}
 	public void EnterAddress() {
 		if (address.isEnabled()) {
-			address.click();
+			SeleniumActions.ClickAction(address);
 			address.sendKeys(properties.getProperty("address"));
 			if (addressOptional.isEnabled()) {
-				addressOptional.click();
+				SeleniumActions.ClickAction(addressOptional);
 			}
 		}
 	}
 	
 	public void EnterPinCode() {
 		if (PinCode.isEnabled()) {
-			PinCode.clear();
-			PinCode.click();
+			SeleniumActions.ClickAction(PinCode);
 			PinCode.sendKeys(properties.getProperty("postal_code"));
 			WaitUtils.loadingWait(driver, Loader);
 		}
 	}
 	public void SelectState() {
 		if (State.isEnabled()) {
-			State.click();
+			SeleniumActions.ClickAction(State);
 			SeleniumActions.selectbyText(State , properties.getProperty("state"));
 		}
 	}
 	public void EnterOptionalAddress() {
 		if (addressOptional.isEnabled()) {
-			addressOptional.click();
+			SeleniumActions.ClickAction(addressOptional);
 			addressOptional.sendKeys(properties.getProperty("address"));
 		}
 	}
@@ -164,13 +156,13 @@ public class ApplyPage extends TestBase {
 	        enterKeys(this.City, cityName, "City");
 		}*/
 		if (City.isEnabled()) {
-			City.click();
+			SeleniumActions.ClickAction(City);
 			String City_Name = properties.getProperty("city");
 			City.sendKeys(City_Name);
 			if(CityErrorMsg.isDisplayed()) {
-				CityErrorMsg.click();
+				SeleniumActions.ClickAction(CityErrorMsg);
 				String City_Name2 = properties.getProperty("city");
-				City.click();
+				SeleniumActions.ClickAction(City);
 				City.sendKeys(City_Name2);
 			}
 		}
@@ -178,21 +170,19 @@ public class ApplyPage extends TestBase {
 	
 	public void EnterAnnualIncome() {
 		if (AnnualIncome.isEnabled()) {
-			AnnualIncome.clear();
-			AnnualIncome.click();
+			SeleniumActions.ClickAction(AnnualIncome);
 			AnnualIncome.sendKeys(properties.getProperty("annualIncome"));
 		}
 	}
 	public void EnterIncomeSource() {
 		if (IncomeSource.isEnabled()) {
-			IncomeSource.click();
+			SeleniumActions.ClickAction(IncomeSource);
 			IncomeSource.sendKeys(properties.getProperty("income-source"));
 		}
 	}
 	public void EnterssnLast4digit() {
 		if (ssnLast4digit.isEnabled()) {
-			ssnLast4digit.clear();
-			ssnLast4digit.click();
+			SeleniumActions.ClickAction(ssnLast4digit);
 			ssnLast4digit.sendKeys(properties.getProperty("ssnLast4digit"));
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20)); 
 			wait.until( ExpectedConditions.visibilityOf(FullssnEnerMessage));
@@ -200,29 +190,26 @@ public class ApplyPage extends TestBase {
 	}
 	public void Enterss1st3digit() {
 		if (ss1st3digit.isEnabled()) {
-			ss1st3digit.clear();
-			ss1st3digit.click();
+			SeleniumActions.ClickAction(ss1st3digit);
 			ss1st3digit.sendKeys(properties.getProperty("ss1st3digit"));
 		}
 	}
 	
 	public void EnterssnMiddle2digit() {
 		if (ssnMiddle2digit.isEnabled()) {
-			ssnMiddle2digit.clear();
-			ssnMiddle2digit.click();
+			SeleniumActions.ClickAction(ssnMiddle2digit);
 			ssnMiddle2digit.sendKeys(properties.getProperty("ssnMiddle2digit"));
 		}
 	}
 	public void EnterPassword() {
 		if (Password.isEnabled()) {
-			Password.clear();
-			Password.click();
+			SeleniumActions.ClickAction(Password);
 			Password.sendKeys(properties.getProperty("password"));
 		}
 	}
 	public void PressSubmitBttn() {
 		if (SubmitBttn.isEnabled()) {
-			SubmitBttn.click();
+			SeleniumActions.ClickAction(SubmitBttn);
 		}
 	}
 

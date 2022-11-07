@@ -1,0 +1,3 @@
+driverBase\DriverManager.class
+com\crm\qa\testcases\LoanApplyTestCases.class
+CommonAssertions\Assertions.class

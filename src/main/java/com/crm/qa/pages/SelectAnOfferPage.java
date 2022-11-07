@@ -16,7 +16,6 @@ public class SelectAnOfferPage extends TestBase {
 		PageFactory.initElements(driver, this);	
 	}
 	
-	//@FindBy(xpath = "//div[@class='blockscreen']") public static WebElement Loader;
 	@FindBy(xpath = "(//span[@class='choose'])[1]") public static WebElement ChooseAnOfferBtn;
 	@FindBy(xpath = "//*[@class='ld ld-ring ld-spin lp-spinner']") WebElement ChooseBtnLoader;
 	@FindBy(xpath = "(//span[@class='ico-selected'])[1]") WebElement OfferSelectedTickBttn;
@@ -30,11 +29,19 @@ public class SelectAnOfferPage extends TestBase {
 		return ChooseAnOfferBtn.isDisplayed();
 	}
 	
+	public void closebtnEnter4digitCode() throws InterruptedException {
+		Thread.sleep(9000);
+		if(ClosebtnEnter4digitCode.isDisplayed()) {
+			System.out.println("Kamalllllllllllll");
+			ClosebtnEnter4digitCode.click();
+			System.out.println("Akshatttttttttttttttttttt");
+		}
+	}
+	
 	public void ChooseAnOfferBttn() {
 		if (ChooseAnOfferBtn.isEnabled()) {
 			ChooseAnOfferBtn.click();
 			WaitUtils.loadingWait(driver, ChooseBtnLoader);
-			//wait.until( ExpectedConditions.visibilityOf(OfferSelectedTickBttn));
 		}
 	}
 

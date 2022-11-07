@@ -1,8 +1,11 @@
 package com.crm.qa.testcases;
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.*;
 import com.crm.qa.base.*;
 import com.crm.qa.pages.ApplyPage;
+import com.crm.qa.pages.BankInformationPage;
 import com.crm.qa.pages.SelectAnOfferPage;
 import com.crm.qa.utilities.WaitUtils;
 
@@ -10,9 +13,10 @@ import CommonAssertions.Assertions;
 
 @Test
 public class LoanApplyTestCases extends TestBase {
-//kkkkkkkkggggggggggttttttttttttttttttttttt
+
 		ApplyPage applypage;
 		SelectAnOfferPage selectAnOfferPage;
+		BankInformationPage bankInformationPage;
 
 		public LoanApplyTestCases() {
 			super();
@@ -33,9 +37,9 @@ public class LoanApplyTestCases extends TestBase {
 		}
 
 		public void TC002_FillCustomerDetails() throws InterruptedException  {
-
-			applypage.SelectLoanPurpose();
+			
 			applypage.EnterLoanAmount();
+			applypage.SelectLoanPurpose();
 			applypage.EnterFirstName();
 			applypage.EnterLastName();
 			applypage.EnterDateOfBirth();
@@ -57,15 +61,23 @@ public class LoanApplyTestCases extends TestBase {
 			Assertions.verifyPageIsOpenedSucessfully("SelectAnOffer");
 		}
 		
-		public void TC003_ToValidateSelectOfferIsOpen(){
+		public void TC003_ToValidateSelectOfferIsOpen() throws InterruptedException{
 			boolean flag = selectAnOfferPage.isChooseAnOfferBtnDisplayed();
 			Assertions.verifyButtonIsDisplayingOrNot(flag);
+			selectAnOfferPage.closebtnEnter4digitCode();
 			selectAnOfferPage.ChooseAnOfferBttn();
 			Assertions.verifyPageIsOpenedSucessfully("BankInformation");
+		}
+		
+		public void TC004_ToValidateBankInformationPage(){
+			//WaitUtils.pageLoadWait();
+			boolean flag = bankInformationPage.isCONNECTYOURBANKACCOUNTNOWDisplayed();
+			Assertions.verifyButtonIsDisplayingOrNot(flag);
+			bankInformationPage.cONNECTYOURBANKACCOUNTNOW();
 		}
 
 		@AfterSuite(alwaysRun = true)
 		public void tearDown() {
-			driver.close();
+			//driver.close();
 		}
 }
