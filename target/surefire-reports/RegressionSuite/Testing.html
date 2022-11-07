@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 07 16:12:49 IST 2022</td>
+<td>Started on:</td><td>Mon Nov 07 18:42:28 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>101 seconds (101720 ms)</td>
+<tr><td>Total time:</td><td>140 seconds (140387 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,16 +77,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testcases.LoanApplyTestCases.TC005_ToValidateConnectPage()'><b>TC005_ToValidateConnectPage</b><br>Test class: testcases.LoanApplyTestCases</td>
-<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //span[@class=&apos;Button-module_flex__2To5J because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//span[@class=&apos;Button-module_flex__2To5J&apos; is not a valid XPath expression.
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Continue&apos;]&quot;}
   (Session info: chrome=107.0.5304.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;TRANTOR-LP452&apos;, ip: &apos;192.168.0.140&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [072e96941df067a8e64b2edfafc755d7, findElement {using=xpath, value=//span[@class=&apos;Button-module_flex__2To5J}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56714/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 072e96941df067a8e64b2edfafc755d7
+Command: [33d60688e0f52a8bdc9f456f22020b0f, findElement {using=xpath, value=//span[text()=&apos;Continue&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:63439}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63439/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 33d60688e0f52a8bdc9f456f22020b0f
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -103,23 +102,22 @@ Session ID: 072e96941df067a8e64b2edfafc755d7
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
-	at pages.ConnectPage.ContinueBtn(ConnectPage.java:21)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at pages.ConnectPage.ContinueBtn(ConnectPage.java:28)
 	at testcases.LoanApplyTestCases.TC005_ToValidateConnectPage(LoanApplyTestCases.java:79)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace714785192", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace714785192'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //span[@class=&apos;Button-module_flex__2To5J because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//span[@class=&apos;Button-module_flex__2To5J&apos; is not a valid XPath expression.
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1926684721", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1926684721'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Continue&apos;]&quot;}
   (Session info: chrome=107.0.5304.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;TRANTOR-LP452&apos;, ip: &apos;192.168.0.140&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [072e96941df067a8e64b2edfafc755d7, findElement {using=xpath, value=//span[@class=&apos;Button-module_flex__2To5J}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56714/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 072e96941df067a8e64b2edfafc755d7
+Command: [33d60688e0f52a8bdc9f456f22020b0f, findElement {using=xpath, value=//span[text()=&apos;Continue&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:63439}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63439/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 33d60688e0f52a8bdc9f456f22020b0f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -144,8 +142,8 @@ Session ID: 072e96941df067a8e64b2edfafc755d7
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
-	at pages.ConnectPage.ContinueBtn(ConnectPage.java:21)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at pages.ConnectPage.ContinueBtn(ConnectPage.java:28)
 	at testcases.LoanApplyTestCases.TC005_ToValidateConnectPage(LoanApplyTestCases.java:79)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
@@ -163,7 +161,7 @@ Session ID: 072e96941df067a8e64b2edfafc755d7
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </pre></div></td>
-<td>0</td>
+<td>40</td>
 <td>testcases.LoanApplyTestCases@41fbdac4</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -180,19 +178,19 @@ Session ID: 072e96941df067a8e64b2edfafc755d7
 <td>59</td>
 <td>testcases.LoanApplyTestCases@41fbdac4</td></tr>
 <tr>
-<td title='testcases.LoanApplyTestCases.TC001_ClickOnApplyBttn()'><b>TC001_ClickOnApplyBttn</b><br>Test class: testcases.LoanApplyTestCases</td>
-<td></td>
-<td>4</td>
-<td>testcases.LoanApplyTestCases@41fbdac4</td></tr>
-<tr>
 <td title='testcases.LoanApplyTestCases.TC002_FillCustomerDetails()'><b>TC002_FillCustomerDetails</b><br>Test class: testcases.LoanApplyTestCases</td>
 <td></td>
-<td>36</td>
+<td>37</td>
 <td>testcases.LoanApplyTestCases@41fbdac4</td></tr>
 <tr>
 <td title='testcases.LoanApplyTestCases.TC004_ToValidateBankInformationPage()'><b>TC004_ToValidateBankInformationPage</b><br>Test class: testcases.LoanApplyTestCases</td>
 <td></td>
 <td>0</td>
+<td>testcases.LoanApplyTestCases@41fbdac4</td></tr>
+<tr>
+<td title='testcases.LoanApplyTestCases.TC001_ClickOnApplyBttn()'><b>TC001_ClickOnApplyBttn</b><br>Test class: testcases.LoanApplyTestCases</td>
+<td></td>
+<td>3</td>
 <td>testcases.LoanApplyTestCases@41fbdac4</td></tr>
 </table><p>
 </body>

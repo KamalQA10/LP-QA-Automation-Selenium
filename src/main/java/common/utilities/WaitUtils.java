@@ -4,6 +4,8 @@ import base.TestBase;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,6 +30,11 @@ public class WaitUtils extends TestBase {
     public static void loadingWaitElement(WebDriver driver, WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait.until(ExpectedConditions.visibilityOf(element)); // wait for loader to appear
+    }
+    
+    public static void loadingWaitElementby(WebElement element) {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    	wait.until(ExpectedConditions.visibilityOf(element));
     }
     
     @SuppressWarnings("deprecation")
