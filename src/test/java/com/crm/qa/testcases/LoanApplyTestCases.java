@@ -71,6 +71,7 @@ public class LoanApplyTestCases extends TestBase {
 		
 		public void TC004_ToValidateBankInformationPage(){
 			//WaitUtils.pageLoadWait();
+			//WaitUtils.pageLoadWait();
 			boolean flag = bankInformationPage.isCONNECTYOURBANKACCOUNTNOWDisplayed();
 			Assertions.verifyButtonIsDisplayingOrNot(flag);
 			bankInformationPage.cONNECTYOURBANKACCOUNTNOW();
