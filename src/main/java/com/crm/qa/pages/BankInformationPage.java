@@ -17,7 +17,7 @@ public class BankInformationPage extends TestBase {
 		PageFactory.initElements(driver, this);	
 	}
 	
-	@FindBy(xpath = "(//div[@class='bank-info-card'])") public static WebElement CONNECTYOURBANKACCOUNTNOW ;
+	@FindBy(xpath = "(//div[@class='bank-info-card']/img)") public static WebElement CONNECTYOURBANKACCOUNTNOW ;
 	
 	public boolean isCONNECTYOURBANKACCOUNTNOWDisplayed() {
 		wait.until( ExpectedConditions.visibilityOf(CONNECTYOURBANKACCOUNTNOW));
