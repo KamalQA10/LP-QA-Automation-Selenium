@@ -1,4 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 123.605 s - in TestSuite
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 175.091 s <<< FAILURE! - in TestSuite
+TC003_ToValidateSelectOfferIsOpen(testcases.LoanApplyTestCases)  Time elapsed: 4.9 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span class="choose">...</span> is not clickable at point (950, 234). Other element would receive the click: <div class="row sms-form-container">...</div>
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'TRANTOR-LP452', ip: '192.168.0.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7e5dd8e490ed007a274374bbcb9cbd05, clickElement {id=de53dbdd-f657-4a6d-b8c5-d7315f94402d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64398}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64398/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (7e5dd8e490ed007a274374bbcb9cbd05)] -> xpath: (//span[@class='choose'])[1]]
+Session ID: 7e5dd8e490ed007a274374bbcb9cbd05
+	at testcases.LoanApplyTestCases.TC003_ToValidateSelectOfferIsOpen(LoanApplyTestCases.java:67)
+
+TC004_ToValidateBankInformationPage(testcases.LoanApplyTestCases)  Time elapsed: 120.591 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: (//div[@class='bank-info-card']/img)' (tried for 60 second(s) with 500 milliseconds interval)
+	at testcases.LoanApplyTestCases.TC004_ToValidateBankInformationPage(LoanApplyTestCases.java:72)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='bank-info-card']/img)"}
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'TRANTOR-LP452', ip: '192.168.0.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7e5dd8e490ed007a274374bbcb9cbd05, findElement {using=xpath, value=(//div[@class='bank-info-card']/img)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64398}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64398/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e5dd8e490ed007a274374bbcb9cbd05
+	at testcases.LoanApplyTestCases.TC004_ToValidateBankInformationPage(LoanApplyTestCases.java:72)
+
+TC005_ToValidateConnectPage(testcases.LoanApplyTestCases)  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError: 
+	at testcases.LoanApplyTestCases.TC005_ToValidateConnectPage(LoanApplyTestCases.java:78)
+
