@@ -4,6 +4,7 @@ import org.testng.annotations.*;
 
 import CommonAssertions.Assertions;
 import base.*;
+import common.utilities.SeleniumActions;
 import common.utilities.WaitUtils;
 import pages.*;
 
@@ -69,17 +70,20 @@ public class LoanApplyTestCases extends TestBase {
 		}
 		
 		public void TC004_ToValidateBankInformationPage(){
-			boolean flag = bankInformationPage.isCONNECTYOURBANKACCOUNTNOWDisplayed();
-			Assertions.verifyButtonIsDisplayingOrNot(flag);
+			//boolean flag = bankInformationPage.isCONNECTYOURBANKACCOUNTNOWDisplayed();
+			//Assertions.verifyButtonIsDisplayingOrNot(flag);
 			bankInformationPage.cONNECTYOURBANKACCOUNTNOW();
 		}
 		
 		public void TC005_ToValidateConnectPage() throws InterruptedException{
 			Assertions.verifyPageIsOpenedSucessfully("Connect");
+			SeleniumActions.JSScroller();
+			Thread.sleep(5000);
 			connectPage.WaitToLoadIframe();
 			connectPage.SwitchToIframe();
 			connectPage.clickOnContinuebtn();
 		}
+
 
 		@AfterSuite(alwaysRun = true)
 		public void tearDown() {

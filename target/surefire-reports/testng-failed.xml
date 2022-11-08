@@ -14,6 +14,7 @@
           <include name="tearDown"/>
           <include name="TC003_ToValidateSelectOfferIsOpen"/>
           <include name="TC005_ToValidateConnectPage"/>
+          <include name="TC002_FillCustomerDetails"/>
         </methods>
       </class> <!-- testcases.LoanApplyTestCases -->
     </classes>

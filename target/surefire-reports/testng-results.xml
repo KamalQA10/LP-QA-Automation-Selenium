@@ -1,202 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-08T16:10:25 IST" name="RegressionSuite" finished-at="2022-11-08T16:13:13 IST" duration-ms="167907">
+  <suite started-at="2022-11-08T17:43:52 IST" name="RegressionSuite" finished-at="2022-11-08T17:45:52 IST" duration-ms="119930">
     <groups>
     </groups>
-    <test started-at="2022-11-08T16:10:25 IST" name="Testing" finished-at="2022-11-08T16:13:13 IST" duration-ms="167907">
+    <test started-at="2022-11-08T17:43:52 IST" name="Testing" finished-at="2022-11-08T17:45:52 IST" duration-ms="119930">
       <class name="testcases.LoanApplyTestCases">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-08T16:10:19 IST" name="setUp" finished-at="2022-11-08T16:10:25 IST" duration-ms="6543" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-08T17:43:46 IST" name="setUp" finished-at="2022-11-08T17:43:52 IST" duration-ms="5889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC001_ClickOnApplyBttn()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-08T16:10:25 IST" name="TC001_ClickOnApplyBttn" finished-at="2022-11-08T16:10:29 IST" duration-ms="3955" status="PASS">
+        <test-method signature="TC001_ClickOnApplyBttn()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-08T17:43:52 IST" name="TC001_ClickOnApplyBttn" finished-at="2022-11-08T17:43:56 IST" duration-ms="4306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC001_ClickOnApplyBttn -->
-        <test-method signature="TC002_FillCustomerDetails()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-08T16:10:29 IST" name="TC002_FillCustomerDetails" finished-at="2022-11-08T16:11:07 IST" duration-ms="38419" status="PASS">
+        <test-method signature="TC002_FillCustomerDetails()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-08T17:43:56 IST" name="TC002_FillCustomerDetails" finished-at="2022-11-08T17:44:37 IST" duration-ms="40311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC002_FillCustomerDetails -->
-        <test-method signature="TC003_ToValidateSelectOfferIsOpen()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-08T16:11:07 IST" name="TC003_ToValidateSelectOfferIsOpen" finished-at="2022-11-08T16:11:12 IST" duration-ms="4889" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span class="choose">...</span> is not clickable at point (950, 234). Other element would receive the click: <div class="row sms-form-container">...</div>
-  (Session info: chrome=107.0.5304.88)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'TRANTOR-LP452', ip: '192.168.0.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7e5dd8e490ed007a274374bbcb9cbd05, clickElement {id=de53dbdd-f657-4a6d-b8c5-d7315f94402d}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64398}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64398/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (7e5dd8e490ed007a274374bbcb9cbd05)] -> xpath: (//span[@class='choose'])[1]]
-Session ID: 7e5dd8e490ed007a274374bbcb9cbd05]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="choose">...</span> is not clickable at point (950, 234). Other element would receive the click: <div class="row sms-form-container">...</div>
-  (Session info: chrome=107.0.5304.88)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'TRANTOR-LP452', ip: '192.168.0.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7e5dd8e490ed007a274374bbcb9cbd05, clickElement {id=de53dbdd-f657-4a6d-b8c5-d7315f94402d}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64398}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64398/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (7e5dd8e490ed007a274374bbcb9cbd05)] -> xpath: (//span[@class='choose'])[1]]
-Session ID: 7e5dd8e490ed007a274374bbcb9cbd05
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:377)
-at com.sun.proxy.$Proxy19.click(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:390)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at com.sun.proxy.$Proxy18.click(Unknown Source)
-at pages.SelectAnOfferPage.ChooseAnOfferBttn(SelectAnOfferPage.java:44)
-at testcases.LoanApplyTestCases.TC003_ToValidateSelectOfferIsOpen(LoanApplyTestCases.java:67)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method signature="TC003_ToValidateSelectOfferIsOpen()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-08T17:44:37 IST" name="TC003_ToValidateSelectOfferIsOpen" finished-at="2022-11-08T17:45:44 IST" duration-ms="67704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC003_ToValidateSelectOfferIsOpen -->
-        <test-method signature="TC004_ToValidateBankInformationPage()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-08T16:11:12 IST" name="TC004_ToValidateBankInformationPage" finished-at="2022-11-08T16:13:13 IST" duration-ms="120590" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: (//div[@class='bank-info-card']/img)' (tried for 60 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: (//div[@class='bank-info-card']/img)' (tried for 60 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at pages.BankInformationPage.isCONNECTYOURBANKACCOUNTNOWDisplayed(BankInformationPage.java:22)
-at testcases.LoanApplyTestCases.TC004_ToValidateBankInformationPage(LoanApplyTestCases.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='bank-info-card']/img)"}
-  (Session info: chrome=107.0.5304.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'TRANTOR-LP452', ip: '192.168.0.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7e5dd8e490ed007a274374bbcb9cbd05, findElement {using=xpath, value=(//div[@class='bank-info-card']/img)}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64398}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64398/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7e5dd8e490ed007a274374bbcb9cbd05
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at com.sun.proxy.$Proxy14.findElement(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-... 17 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="TC004_ToValidateBankInformationPage()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-08T17:45:44 IST" name="TC004_ToValidateBankInformationPage" finished-at="2022-11-08T17:45:44 IST" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC004_ToValidateBankInformationPage -->
-        <test-method signature="TC005_ToValidateConnectPage()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-08T16:13:13 IST" name="TC005_ToValidateConnectPage" finished-at="2022-11-08T16:13:13 IST" duration-ms="7" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 
-at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
-at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:23)
-at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
-at CommonAssertions.Assertions.verifyPageIsOpenedSucessfully(Assertions.java:9)
-at testcases.LoanApplyTestCases.TC005_ToValidateConnectPage(LoanApplyTestCases.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="TC005_ToValidateConnectPage()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-08T17:45:44 IST" name="TC005_ToValidateConnectPage" finished-at="2022-11-08T17:45:52 IST" duration-ms="7380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC005_ToValidateConnectPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-08T16:13:13 IST" name="tearDown" finished-at="2022-11-08T16:13:13 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-08T17:45:52 IST" name="tearDown" finished-at="2022-11-08T17:45:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

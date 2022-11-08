@@ -3,6 +3,7 @@ package common.utilities;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -41,6 +42,11 @@ public class SeleniumActions extends TestBase {
             Assert.assertTrue(false, "Unable to switch to the frame. " + e);
         }
         return;
+    }
+    
+    public static void JSScroller() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,350)", "");
     }
 	
 	public static void SwitchToDefaultContent() {
