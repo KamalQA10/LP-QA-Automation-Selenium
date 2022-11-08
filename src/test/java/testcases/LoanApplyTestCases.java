@@ -74,9 +74,11 @@ public class LoanApplyTestCases extends TestBase {
 			bankInformationPage.cONNECTYOURBANKACCOUNTNOW();
 		}
 		
-		public void TC005_ToValidateConnectPage(){
+		public void TC005_ToValidateConnectPage() throws InterruptedException{
 			Assertions.verifyPageIsOpenedSucessfully("Connect");
-			connectPage.ContinueBtn();
+			connectPage.WaitToLoadIframe();
+			connectPage.SwitchToIframe();
+			connectPage.clickOnContinuebtn();
 		}
 
 		@AfterSuite(alwaysRun = true)

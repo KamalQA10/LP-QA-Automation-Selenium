@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 
 public class WaitUtils extends TestBase {
@@ -35,6 +36,15 @@ public class WaitUtils extends TestBase {
     public static void loadingWaitElementby(WebElement element) {
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     	wait.until(ExpectedConditions.visibilityOf(element));
+    }
+    
+    public static WebElement waitVisibility(WebElement element, String elementName) {
+        try {
+            return wait.until(ExpectedConditions.visibilityOf(element));
+        } catch (Exception e) {
+            Assert.assertTrue(false, "Unable to find : " + elementName);
+        }
+        return element;
     }
     
     @SuppressWarnings("deprecation")
