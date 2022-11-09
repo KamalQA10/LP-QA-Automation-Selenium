@@ -83,9 +83,9 @@ public class LoanApplyTestCases extends TestBase {
 			connectPage.waitToplaidCancelbtn();
 			//SeleniumActions.SwitchToDefaultContent();			
 			SeleniumActions.ScrollDown();
-			connectPage.WaitToLoadIframe();
-			connectPage.SwitchToIframe();
-			SeleniumActions.SwitchToDefaultContent();		
+			//connectPage.WaitToLoadIframe();
+			//connectPage.SwitchToIframe();
+			//SeleniumActions.SwitchToDefaultContent();		
 			connectPage.clickOnContinuebtn();
 		}
 
