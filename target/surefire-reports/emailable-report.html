@@ -9,19 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">RegressionSuite</th></tr>
-<tr><td><a href="#t0">Testing</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">229,904</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Testing</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">213,954</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testing &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">testcases.LoanApplyTestCases</td><td><a href="#m0">TC003_ToValidateSelectOfferIsOpen</a></td><td rowspan="1">1667974371578</td><td rowspan="1">11681</td></tr><tr class="failedeven"><td><a href="#m1">TC004_ToValidateBankInformationPage</a></td><td rowspan="1">1667974383265</td><td rowspan="1">120607</td></tr><tr class="failedeven"><td><a href="#m2">TC005_ToValidateConnectPage</a></td><td rowspan="1">1667974503873</td><td rowspan="1">12</td></tr><tr><th colspan="4">Testing &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testcases.LoanApplyTestCases</td><td><a href="#m3">TC001_ClickOnApplyBttn</a></td><td rowspan="1">1667974274013</td><td rowspan="1">63142</td></tr><tr class="passedeven"><td><a href="#m4">TC002_FillCustomerDetails</a></td><td rowspan="1">1667974337157</td><td rowspan="1">34420</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testing &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">testcases.LoanApplyTestCases</td><td><a href="#m0">TC002_FillCustomerDetails</a></td><td rowspan="1">1667993286563</td><td rowspan="1">40062</td></tr><tr class="failedeven"><td><a href="#m1">TC003_ToValidateSelectOfferIsOpen</a></td><td rowspan="1">1667993326632</td><td rowspan="1">40044</td></tr><tr class="failedeven"><td><a href="#m2">TC004_ToValidateBankInformationPage</a></td><td rowspan="1">1667993366678</td><td rowspan="1">120632</td></tr><tr class="failedeven"><td><a href="#m3">TC005_ToValidateConnectPage</a></td><td rowspan="1">1667993487311</td><td rowspan="1">7</td></tr><tr><th colspan="4">Testing &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.LoanApplyTestCases</td><td><a href="#m4">TC001_ClickOnApplyBttn</a></td><td rowspan="1">1667993273388</td><td rowspan="1">13174</td></tr></tbody>
 </table>
-<h2>Testing</h2><h3 id="m0">testcases.LoanApplyTestCases#TC003_ToValidateSelectOfferIsOpen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;choose&quot;&gt;...&lt;/span&gt; is not clickable at point (1196, 529). Other element would receive the click: &lt;footer id=&quot;app-footer&quot; class=&quot;app-footer&quot;&gt;...&lt;/footer&gt;
+<h2>Testing</h2><h3 id="m0">testcases.LoanApplyTestCases#TC002_FillCustomerDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#loanAmount&quot;}
   (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;TRANTOR-LP452&apos;, ip: &apos;192.168.184.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+System info: host: &apos;TRANTOR-LP452&apos;, ip: &apos;192.168.207.119&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b635756450c91dca9007f93f26f5e358, clickElement {id=52209ceb-15c7-475e-892d-e54fef3cb941}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:53347}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53347/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b635756450c91dca9007f93f26f5e358)] -&gt; xpath: (//span[@class=&apos;choose&apos;])[1]]
-Session ID: b635756450c91dca9007f93f26f5e358
+Command: [a2e1250cb1140f42e135509451fe0594, findElement {using=id, value=loanAmount}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:57430}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57430/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2e1250cb1140f42e135509451fe0594
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -29,36 +29,71 @@ Session ID: b635756450c91dca9007f93f26f5e358
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:377)
-	at com.sun.proxy.$Proxy19.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:390)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at pages.SelectAnOfferPage.ChooseAnOfferBttn(SelectAnOfferPage.java:44)
-	at testcases.LoanApplyTestCases.TC003_ToValidateSelectOfferIsOpen(LoanApplyTestCases.java:68)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy14.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.isEnabled(Unknown Source)
+	at pages.ApplyPage.EnterLoanAmount(ApplyPage.java:73)
+	at testcases.LoanApplyTestCases.TC002_FillCustomerDetails(LoanApplyTestCases.java:40)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcases.LoanApplyTestCases#TC004_ToValidateBankInformationPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: (//div[@class=&apos;bank-info-card&apos;]/img)&apos; (tried for 60 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at pages.BankInformationPage.isCONNECTYOURBANKACCOUNTNOWDisplayed(BankInformationPage.java:22)
-	at testcases.LoanApplyTestCases.TC004_ToValidateBankInformationPage(LoanApplyTestCases.java:73)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&apos;bank-info-card&apos;]/img)&quot;}
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.LoanApplyTestCases#TC003_ToValidateSelectOfferIsOpen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@class=&apos;choose&apos;])[1]&quot;}
   (Session info: chrome=107.0.5304.88)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;TRANTOR-LP452&apos;, ip: &apos;192.168.184.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+System info: host: &apos;TRANTOR-LP452&apos;, ip: &apos;192.168.207.119&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b635756450c91dca9007f93f26f5e358, findElement {using=xpath, value=(//div[@class=&apos;bank-info-card&apos;]/img)}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:53347}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53347/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b635756450c91dca9007f93f26f5e358
+Command: [a2e1250cb1140f42e135509451fe0594, findElement {using=xpath, value=(//span[@class=&apos;choose&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:57430}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57430/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2e1250cb1140f42e135509451fe0594
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy14.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
+	at pages.SelectAnOfferPage.isChooseAnOfferBtnDisplayed(SelectAnOfferPage.java:29)
+	at testcases.LoanApplyTestCases.TC003_ToValidateSelectOfferIsOpen(LoanApplyTestCases.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.LoanApplyTestCases#TC004_ToValidateBankInformationPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.cssSelector: .bank-info-card&apos; (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.BankInformationPage.isCONNECTYOURBANKACCOUNTNOWDisplayed(BankInformationPage.java:25)
+	at testcases.LoanApplyTestCases.TC004_ToValidateBankInformationPage(LoanApplyTestCases.java:74)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.bank-info-card&quot;}
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;TRANTOR-LP452&apos;, ip: &apos;192.168.207.119&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a2e1250cb1140f42e135509451fe0594, findElement {using=css selector, value=.bank-info-card}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KAMAL~1.BIS\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:57430}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57430/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2e1250cb1140f42e135509451fe0594
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -84,15 +119,14 @@ Session ID: b635756450c91dca9007f93f26f5e358
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
 	... 17 more
-... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testcases.LoanApplyTestCases#TC005_ToValidateConnectPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.LoanApplyTestCases#TC005_ToValidateConnectPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 
 	at CommonAssertions.Assertions.verifyPageIsOpenedSucessfully(Assertions.java:9)
-	at testcases.LoanApplyTestCases.TC005_ToValidateConnectPage(LoanApplyTestCases.java:79)
+	at testcases.LoanApplyTestCases.TC005_ToValidateConnectPage(LoanApplyTestCases.java:80)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
 ... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testcases.LoanApplyTestCases#TC001_ClickOnApplyBttn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testcases.LoanApplyTestCases#TC002_FillCustomerDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.LoanApplyTestCases#TC001_ClickOnApplyBttn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

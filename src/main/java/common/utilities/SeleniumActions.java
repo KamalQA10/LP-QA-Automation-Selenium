@@ -51,17 +51,14 @@ public class SeleniumActions extends TestBase {
 	public static void WebPageZoomOut()
     {
     	JavascriptExecutor executor = (JavascriptExecutor)driver;
-    	executor.executeScript("document.body.style.zoom = '0.8'");
+    	executor.executeScript("document.body.style.zoom = '1.2'");
     }
 	
 	public static void ScrollDown()
     {
         Actions act = new Actions(driver);
-        act.sendKeys(Keys.PAGE_DOWN).build().perform(); //Page Down
+        act.sendKeys(Keys.PAGE_DOWN).build().perform();
         System.out.println("Scroll down perfomed");
-        try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {e.printStackTrace();}
     }
 	
 	public static void SwitchToDefaultContent() {

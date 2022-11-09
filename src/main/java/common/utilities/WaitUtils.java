@@ -24,13 +24,13 @@ public class WaitUtils extends TestBase {
     
     public static void loadingWait(WebDriver driver, WebElement loader) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        wait.until(ExpectedConditions.visibilityOf(loader)); // wait for loader to appear
-        wait.until(ExpectedConditions.invisibilityOf(loader)); // wait for loader to disappear
+        wait.until(ExpectedConditions.visibilityOf(loader));
+        wait.until(ExpectedConditions.invisibilityOf(loader));
     }
     
     public static void loadingWaitElement(WebDriver driver, WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-        wait.until(ExpectedConditions.visibilityOf(element)); // wait for loader to appear
+        wait.until(ExpectedConditions.visibilityOf(element));
     }
     
     public static void loadingWaitElementby(WebElement element) {

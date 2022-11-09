@@ -6,8 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.JavascriptExecutor;
 
 import base.TestBase;
+import common.utilities.SeleniumActions;
+import common.utilities.WaitUtils;
 
 public class BankInformationPage extends TestBase {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
@@ -16,16 +19,19 @@ public class BankInformationPage extends TestBase {
 		PageFactory.initElements(driver, this);	
 	}
 	
-	@FindBy(xpath = "(//div[@class='bank-info-card']/img)") public static WebElement CONNECTYOURBANKACCOUNTNOW ;
+	@FindBy(css = ".bank-info-card") public static WebElement CONNECTYOURBANKACCOUNTNOW ;
 	
 	public boolean isCONNECTYOURBANKACCOUNTNOWDisplayed() {
 		wait.until( ExpectedConditions.elementToBeClickable(CONNECTYOURBANKACCOUNTNOW));
 		return CONNECTYOURBANKACCOUNTNOW.isDisplayed();
 	}
 	
-	public void cONNECTYOURBANKACCOUNTNOW() {
-		if(CONNECTYOURBANKACCOUNTNOW.isDisplayed()) {
-			CONNECTYOURBANKACCOUNTNOW.click();
-		}
+	public void cONNECTYOURBANKACCOUNTNOW() throws InterruptedException {
+		WaitUtils.loadingWait(driver, CONNECTYOURBANKACCOUNTNOW);
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", CONNECTYOURBANKACCOUNTNOW);
 	}
 }
+
+
+
