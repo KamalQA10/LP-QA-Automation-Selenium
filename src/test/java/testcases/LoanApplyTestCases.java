@@ -61,6 +61,7 @@ public class LoanApplyTestCases extends TestBase {
 		}
 		
 		public void TC003_ToValidateSelectOfferIsOpen() throws InterruptedException{
+			connectPage.webPageZoomOut();
 			boolean flag = selectAnOfferPage.isChooseAnOfferBtnDisplayed();
 			Assertions.verifyButtonIsDisplayingOrNot(flag);
 			selectAnOfferPage.closebtnEnter4digitCode();
@@ -72,11 +73,11 @@ public class LoanApplyTestCases extends TestBase {
 			boolean flag = bankInformationPage.isCONNECTYOURBANKACCOUNTNOWDisplayed();
 			Assertions.verifyButtonIsDisplayingOrNot(flag);
 			bankInformationPage.cONNECTYOURBANKACCOUNTNOW();
-			connectPage.webPageZoomOut();
 		}
 		
 		public void TC005_ToValidateConnectPage() throws Exception{
 			Assertions.verifyPageIsOpenedSucessfully("Connect");
+			SeleniumActions.ScrollDown();
 			connectPage.WaitToLoadIframe();
 			connectPage.SwitchToIframe();
 			connectPage.clickOnContinuebtn();

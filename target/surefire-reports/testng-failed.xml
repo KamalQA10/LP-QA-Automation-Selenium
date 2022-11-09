@@ -9,8 +9,10 @@
     <classes>
       <class name="testcases.LoanApplyTestCases">
         <methods>
+          <include name="TC004_ToValidateBankInformationPage"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="TC003_ToValidateSelectOfferIsOpen"/>
           <include name="TC005_ToValidateConnectPage"/>
         </methods>
       </class> <!-- testcases.LoanApplyTestCases -->
