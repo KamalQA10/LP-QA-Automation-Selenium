@@ -27,9 +27,10 @@ public class BankInformationPage extends TestBase {
 	}
 	
 	public void cONNECTYOURBANKACCOUNTNOW() throws InterruptedException {
-		WaitUtils.loadingWait(driver, CONNECTYOURBANKACCOUNTNOW);
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
-		executor.executeScript("arguments[0].click();", CONNECTYOURBANKACCOUNTNOW);
+		//WaitUtils.loadingWait(driver, CONNECTYOURBANKACCOUNTNOW);
+		//JavascriptExecutor executor = (JavascriptExecutor)driver;
+		//executor.executeScript("arguments[0].click();", CONNECTYOURBANKACCOUNTNOW);
+		SeleniumActions.ClickAction(CONNECTYOURBANKACCOUNTNOW);
 	}
 }
 

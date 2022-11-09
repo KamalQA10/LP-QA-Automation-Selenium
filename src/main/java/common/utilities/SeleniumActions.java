@@ -51,7 +51,7 @@ public class SeleniumActions extends TestBase {
 	public static void WebPageZoomOut()
     {
     	JavascriptExecutor executor = (JavascriptExecutor)driver;
-    	executor.executeScript("document.body.style.zoom = '1.2'");
+    	executor.executeScript("document.body.style.zoom = '0.1'");
     }
 	
 	public static void ScrollDown()

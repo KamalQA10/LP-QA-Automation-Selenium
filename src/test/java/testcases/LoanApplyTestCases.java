@@ -65,7 +65,7 @@ public class LoanApplyTestCases extends TestBase {
 			Assertions.verifyButtonIsDisplayingOrNot(flag);
 			selectAnOfferPage.closebtnEnter4digitCode();
 			selectAnOfferPage.ChooseAnOfferBttn();
-			connectPage.webPageZoomOut();
+			//connectPage.webPageZoomOut();
 			Thread.sleep(5000);
 			Assertions.verifyPageIsOpenedSucessfully("BankInformation");
 		}
@@ -81,7 +81,7 @@ public class LoanApplyTestCases extends TestBase {
 			connectPage.WaitToLoadIframe();
 			connectPage.SwitchToIframe();
 			connectPage.waitToplaidCancelbtn();
-			SeleniumActions.SwitchToDefaultContent();			
+			//SeleniumActions.SwitchToDefaultContent();			
 			SeleniumActions.ScrollDown();
 			connectPage.WaitToLoadIframe();
 			connectPage.SwitchToIframe();
