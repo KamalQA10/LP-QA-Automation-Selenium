@@ -1,6 +1,5 @@
 package testcases;
 
-import org.openqa.selenium.remote.Browser;
 import org.testng.annotations.*;
 import CommonAssertions.Assertions;
 import base.*;
@@ -65,8 +64,6 @@ public class LoanApplyTestCases extends TestBase {
 			Assertions.verifyButtonIsDisplayingOrNot(flag);
 			selectAnOfferPage.closebtnEnter4digitCode();
 			selectAnOfferPage.ChooseAnOfferBttn();
-			//connectPage.webPageZoomOut();
-			Thread.sleep(5000);
 			Assertions.verifyPageIsOpenedSucessfully("BankInformation");
 		}
 		
@@ -80,12 +77,8 @@ public class LoanApplyTestCases extends TestBase {
 			Assertions.verifyPageIsOpenedSucessfully("Connect");
 			connectPage.WaitToLoadIframe();
 			connectPage.SwitchToIframe();
-			connectPage.waitToplaidCancelbtn();
-			//SeleniumActions.SwitchToDefaultContent();			
+			connectPage.waitToplaidCancelbtn();	
 			SeleniumActions.ScrollDown();
-			//connectPage.WaitToLoadIframe();
-			//connectPage.SwitchToIframe();
-			//SeleniumActions.SwitchToDefaultContent();		
 			connectPage.clickOnContinuebtn();
 		}
 
