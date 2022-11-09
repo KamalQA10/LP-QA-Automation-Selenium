@@ -22,9 +22,6 @@ public class BankInformationPage extends TestBase {
 	@FindBy(css = ".bank-info-card") public static WebElement CONNECTYOURBANKACCOUNTNOW ;
 	
 	public boolean isCONNECTYOURBANKACCOUNTNOWDisplayed() {
-		//wait.until( ExpectedConditions.elementToBeClickable(CONNECTYOURBANKACCOUNTNOW));
-		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-		//wait.until(ExpectedConditions.elementToBeClickable(CONNECTYOURBANKACCOUNTNOW));
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		try{
 		      wait

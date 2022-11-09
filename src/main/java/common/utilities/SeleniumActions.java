@@ -57,8 +57,5 @@ public class SeleniumActions extends TestBase {
         System.out.println("Scroll down perfomed");
     }
 	
-	public static void SwitchToDefaultContent() {
-		driver.switchTo().defaultContent();
-	}
 
 }

@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-09T18:14:19 IST" name="RegressionSuite" finished-at="2022-11-09T18:16:03 IST" duration-ms="103925">
+  <suite started-at="2022-11-09T18:25:18 IST" name="RegressionSuite" finished-at="2022-11-09T18:27:11 IST" duration-ms="113283">
     <groups>
     </groups>
-    <test started-at="2022-11-09T18:14:19 IST" name="Testing" finished-at="2022-11-09T18:16:03 IST" duration-ms="103925">
+    <test started-at="2022-11-09T18:25:18 IST" name="Testing" finished-at="2022-11-09T18:27:11 IST" duration-ms="113283">
       <class name="testcases.LoanApplyTestCases">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-09T18:14:14 IST" name="setUp" finished-at="2022-11-09T18:14:19 IST" duration-ms="5742" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-09T18:25:11 IST" name="setUp" finished-at="2022-11-09T18:25:18 IST" duration-ms="6842" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC001_ClickOnApplyBttn()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-09T18:14:19 IST" name="TC001_ClickOnApplyBttn" finished-at="2022-11-09T18:14:24 IST" duration-ms="4282" status="PASS">
+        <test-method signature="TC001_ClickOnApplyBttn()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-09T18:25:18 IST" name="TC001_ClickOnApplyBttn" finished-at="2022-11-09T18:25:22 IST" duration-ms="4072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC001_ClickOnApplyBttn -->
-        <test-method signature="TC002_FillCustomerDetails()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-09T18:14:24 IST" name="TC002_FillCustomerDetails" finished-at="2022-11-09T18:14:55 IST" duration-ms="31618" status="PASS">
+        <test-method signature="TC002_FillCustomerDetails()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-09T18:25:22 IST" name="TC002_FillCustomerDetails" finished-at="2022-11-09T18:26:01 IST" duration-ms="38994" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC002_FillCustomerDetails -->
-        <test-method signature="TC003_ToValidateSelectOfferIsOpen()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-09T18:14:55 IST" name="TC003_ToValidateSelectOfferIsOpen" finished-at="2022-11-09T18:15:56 IST" duration-ms="60350" status="PASS">
+        <test-method signature="TC003_ToValidateSelectOfferIsOpen()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-09T18:26:01 IST" name="TC003_ToValidateSelectOfferIsOpen" finished-at="2022-11-09T18:27:03 IST" duration-ms="61323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC003_ToValidateSelectOfferIsOpen -->
-        <test-method signature="TC004_ToValidateBankInformationPage()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-09T18:15:56 IST" name="TC004_ToValidateBankInformationPage" finished-at="2022-11-09T18:15:56 IST" duration-ms="305" status="PASS">
+        <test-method signature="TC004_ToValidateBankInformationPage()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-09T18:27:03 IST" name="TC004_ToValidateBankInformationPage" finished-at="2022-11-09T18:27:03 IST" duration-ms="300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC004_ToValidateBankInformationPage -->
-        <test-method signature="TC005_ToValidateConnectPage()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-09T18:15:56 IST" name="TC005_ToValidateConnectPage" finished-at="2022-11-09T18:16:03 IST" duration-ms="7302" status="PASS">
+        <test-method signature="TC005_ToValidateConnectPage()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-09T18:27:03 IST" name="TC005_ToValidateConnectPage" finished-at="2022-11-09T18:27:11 IST" duration-ms="8550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC005_ToValidateConnectPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-09T18:16:03 IST" name="tearDown" finished-at="2022-11-09T18:16:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoanApplyTestCases@41fbdac4]" started-at="2022-11-09T18:27:12 IST" name="tearDown" finished-at="2022-11-09T18:27:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
