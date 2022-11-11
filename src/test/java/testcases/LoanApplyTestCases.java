@@ -80,6 +80,9 @@ public class LoanApplyTestCases extends TestBase {
 			connectPage.waitToplaidCancelbtn();	
 			SeleniumActions.ScrollDown();
 			connectPage.clickOnContinuebtn();
+			connectPage.EnterBankNameINSearchBankTxtBox();
+			
+			
 		}
 
 		@AfterSuite(alwaysRun = true)

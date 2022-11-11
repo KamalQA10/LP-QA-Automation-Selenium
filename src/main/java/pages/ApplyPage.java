@@ -147,14 +147,7 @@ public class ApplyPage extends TestBase {
 		}
 	}
 	
-	
 	public void EnterCity() {
-	/*public void enterCity(String cityName) {
-			Actions actions = new Actions(driver);
-			actions.moveToElement(City).click().perform();
-			WaitUtils.waitVisibility(this.City, "City");
-	        enterKeys(this.City, cityName, "City");
-		}*/
 		if (City.isEnabled()) {
 			SeleniumActions.ClickAction(City);
 			String City_Name = properties.getProperty("city");
