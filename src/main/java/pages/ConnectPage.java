@@ -28,6 +28,7 @@ public class ConnectPage extends TestBase {
     @FindBy(css = "#plaid-link-iframe-1") private WebElement frame;
     @FindBy(xpath = "//*[@class='Icons-module_icon__3ePq6']") private WebElement plaidCancelbtn;
     @FindBy(id = "search-input") private WebElement SearchBankTxtBox;
+    @FindBy(xpath = "//h2[text()='First Platypus Bank']") private WebElement bankNameopt;
 	
 	public void WaitToLoadIframe() { 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
@@ -77,5 +78,17 @@ public class ConnectPage extends TestBase {
         		Assert.assertTrue(false, "Unable to find : " + "SearchBankTxtBox");
         	}
 		}
+	
+	public void ClickOnBankName() {
+		try 
+		{
+			wait.until(ExpectedConditions.visibilityOf(bankNameopt));
+			SeleniumActions.ClickAction(bankNameopt);
+		}	
+		catch (Exception e) {
+			Assert.assertTrue(false, "Unable to find : " + "bankNameopt");
+		}
+	}
+
 }
 

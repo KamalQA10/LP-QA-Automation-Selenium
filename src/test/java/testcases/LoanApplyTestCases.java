@@ -81,8 +81,9 @@ public class LoanApplyTestCases extends TestBase {
 			SeleniumActions.ScrollDown();
 			connectPage.clickOnContinuebtn();
 			connectPage.EnterBankNameINSearchBankTxtBox();
-			
-			
+			//Thread.sleep(3000);
+			connectPage.ClickOnBankName();
+			connectPage.ClickOnBankName();
 		}
 
 		@AfterSuite(alwaysRun = true)
