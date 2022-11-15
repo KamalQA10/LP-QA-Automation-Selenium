@@ -10,54 +10,54 @@ import pages.*;
 @Test
 public class LoanApplyTestCases extends TestBase {
 
-		ApplyPage applypage;
-		SelectAnOfferPage selectAnOfferPage;
-		BankInformationPage bankInformationPage;
-		ConnectPage connectPage;
+	ApplyPage applypage;
+	SelectAnOfferPage selectAnOfferPage;
+	BankInformationPage bankInformationPage;
+	ConnectPage connectPage;
 
-		public LoanApplyTestCases() {
-			super();
-		}
+	public LoanApplyTestCases() {
+		super();
+	}
 
-		@BeforeSuite(alwaysRun = true)
-		public void setUp() {
-			initializaton();
-			applypage = new ApplyPage();
-			selectAnOfferPage = new SelectAnOfferPage();
-			bankInformationPage = new BankInformationPage();
-			connectPage = new ConnectPage();
-		}
+	@BeforeSuite(alwaysRun = true)
+	public void setUp() {
+		initializaton();
+		applypage = new ApplyPage();
+		selectAnOfferPage = new SelectAnOfferPage();
+		bankInformationPage = new BankInformationPage();
+		connectPage = new ConnectPage();
+	}
 
-		public void TC001_ClickOnApplyBttn(){
-			applypage.ClickApply();
-			boolean flag = applypage.isLPLogoDisplayed();
-			Assertions.verifyPageIsOpenedSucessfully("Start");
-			Assertions.verifyButtonIsDisplayingOrNot(flag);
-		}
+	public void TC001_ClickOnApplyBttn(){
+		applypage.ClickApply();
+		boolean flag = applypage.isLPLogoDisplayed();
+		Assertions.verifyPageIsOpenedSucessfully("Start");
+		Assertions.verifyButtonIsDisplayingOrNot(flag);
+	}
 
-		public void TC002_FillCustomerDetails() throws InterruptedException  {
-			applypage.EnterLoanAmount();
-			applypage.SelectLoanPurpose();
-			applypage.EnterFirstName();
-			applypage.EnterLastName();
-			applypage.EnterDateOfBirth();
-			applypage.EnterPhoneNumber();
-			applypage.EnterEmailId();
-			applypage.EnterAddress();
-			applypage.EnterPinCode();
-			applypage.SelectState();
-			applypage.EnterOptionalAddress();
-			applypage.EnterCity();
-			applypage.EnterAnnualIncome();
-			applypage.EnterIncomeSource();
-			applypage.EnterssnLast4digit();
-			applypage.Enterss1st3digit();
-			applypage.EnterssnMiddle2digit();
-			applypage.EnterPassword();
-			applypage.PressSubmitBttn();
-			WaitUtils.loadingWaitElement(driver, SelectAnOfferPage.ChooseAnOfferBtn);
-			Assertions.verifyPageIsOpenedSucessfully("SelectAnOffer");
-		}
+	public void TC002_FillCustomerDetails() throws InterruptedException  {
+		applypage.EnterLoanAmount();
+		applypage.SelectLoanPurpose();
+		applypage.EnterFirstName();
+		applypage.EnterLastName();
+		applypage.EnterDateOfBirth();
+		applypage.EnterPhoneNumber();
+		applypage.EnterEmailId();
+		applypage.EnterAddress();
+		applypage.EnterPinCode();
+		applypage.SelectState();
+		applypage.EnterOptionalAddress();
+		applypage.EnterCity();
+		applypage.EnterAnnualIncome();
+		applypage.EnterIncomeSource();
+		applypage.EnterssnLast4digit();
+		applypage.Enterss1st3digit();
+		applypage.EnterssnMiddle2digit();
+		applypage.EnterPassword();
+		applypage.PressSubmitBttn();
+		WaitUtils.loadingWaitElement(driver, SelectAnOfferPage.ChooseAnOfferBtn);
+		Assertions.verifyPageIsOpenedSucessfully("SelectAnOffer");
+	}
 		
 		public void TC003_ToValidateSelectOfferIsOpen() throws InterruptedException{
 			boolean flag = selectAnOfferPage.isChooseAnOfferBtnDisplayed();
@@ -81,9 +81,14 @@ public class LoanApplyTestCases extends TestBase {
 			SeleniumActions.ScrollDown();
 			connectPage.clickOnContinuebtn();
 			connectPage.EnterBankNameINSearchBankTxtBox();
-			//Thread.sleep(3000);
 			connectPage.ClickOnBankName();
-			connectPage.ClickOnBankName();
+			connectPage.BankNameopt1();
+			connectPage.BankUserNameTxtField();
+			connectPage.BankPasswordTxtField();		
+			connectPage.SubmitButton();
+			connectPage.SelectAcntCheckbox();
+			connectPage.clickOnContinuebtn();
+			connectPage.ClickOnAllowButton();
 		}
 
 		@AfterSuite(alwaysRun = true)

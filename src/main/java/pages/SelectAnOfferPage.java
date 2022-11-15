@@ -14,7 +14,9 @@ import base.TestBase;
 import common.utilities.WaitUtils;
 
 public class SelectAnOfferPage extends TestBase {
+
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+	WaitUtils waitUtils = new WaitUtils();
 	
 	public SelectAnOfferPage() {
 		PageFactory.initElements(driver, this);	
@@ -30,7 +32,7 @@ public class SelectAnOfferPage extends TestBase {
 	}
 	
 	public void closebtnEnter4digitCode() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 		try{
 		      wait
 		      .ignoring(ElementNotInteractableException.class, NoSuchElementException.class)
@@ -42,7 +44,7 @@ public class SelectAnOfferPage extends TestBase {
 	public void ChooseAnOfferBttn() {
 		if (ChooseAnOfferBtn.isEnabled()) {
 			ChooseAnOfferBtn.click();
-			WaitUtils.loadingWait(driver, ChooseBtnLoader);
+			waitUtils.loadingWait(driver, ChooseBtnLoader);
 		}
 	}
 

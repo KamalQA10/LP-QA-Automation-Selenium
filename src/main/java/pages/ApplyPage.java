@@ -16,12 +16,8 @@ import base.TestBase;
 import common.utilities.*;
 
 public class ApplyPage extends TestBase {
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	
-	Wait<WebDriver> wait_fluent = new FluentWait<WebDriver>(driver)
-    		.withTimeout(Duration.ofSeconds(30L))
-    		.pollingEvery(Duration.ofSeconds(5L))
-    		.ignoring(NoSuchElementException.class);
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	WaitUtils waitUtils = new WaitUtils();
 	
 	public ApplyPage() {
 		PageFactory.initElements(driver, this);
@@ -45,7 +41,7 @@ public class ApplyPage extends TestBase {
 	@FindBy(id = "unit") WebElement addressOptional;
 	@FindBy(id = "postal_code") WebElement PinCode;
 	@FindBy(xpath = "//img[@class='loading-inline requestzip']") WebElement ZipLoader;
-	@FindBy(xpath = "//*[@class='input-group-addon icon']/img") WebElement Loader;
+	@FindBy(xpath = "(//*[@class='input-group-addon icon']/img)[1]") WebElement Loader;
 	@FindBy(id = "state") WebElement State;
 	@FindBy(xpath = "//input[@id='locality']") WebElement City;
 	@FindBy(xpath = "//div[text()=' City is required']") WebElement CityErrorMsg;
@@ -131,7 +127,7 @@ public class ApplyPage extends TestBase {
 		if (PinCode.isEnabled()) {
 			SeleniumActions.ClickAction(PinCode);
 			PinCode.sendKeys(properties.getProperty("postal_code"));
-			WaitUtils.loadingWait(driver, Loader);
+			waitUtils.loadingWait(driver, Loader);
 		}
 	}
 	public void SelectState() {
@@ -201,6 +197,7 @@ public class ApplyPage extends TestBase {
 		}
 	}
 	public void PressSubmitBttn() {
+		SeleniumActions.JsExecutorTillElement(SubmitBttn);
 		if (SubmitBttn.isEnabled()) {
 			SeleniumActions.ClickAction(SubmitBttn);
 		}

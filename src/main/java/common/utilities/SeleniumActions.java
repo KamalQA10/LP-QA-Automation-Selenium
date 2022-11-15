@@ -14,6 +14,7 @@ import org.testng.Assert;
 import base.TestBase;
 
 public class SeleniumActions extends TestBase {
+	private static JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	public static void selectbyText(WebElement element, String text) {
 		Select select = new Select(element);
@@ -57,5 +58,9 @@ public class SeleniumActions extends TestBase {
         System.out.println("Scroll down perfomed");
     }
 	
-
+	public static void JsExecutorTillElement(WebElement element) {
+        //This will scroll the page till the element is found		
+        js.executeScript("arguments[0].scrollIntoView();", element);
+	}
+	
 }

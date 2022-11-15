@@ -19,7 +19,7 @@ public class BankInformationPage extends TestBase {
 		PageFactory.initElements(driver, this);	
 	}
 	
-	@FindBy(css = ".bank-info-card") public static WebElement CONNECTYOURBANKACCOUNTNOW ;
+	@FindBy(css = ".bank-info-card") public WebElement CONNECTYOURBANKACCOUNTNOW ;
 	
 	public boolean isCONNECTYOURBANKACCOUNTNOWDisplayed() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
