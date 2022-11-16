@@ -1,11 +1,11 @@
 base\TestBase.class
 pages\SelectAnOfferPage.class
 pages\BankInformationPage.class
-pages\ConnectPage.class
 common\utilities\AnnotationTransformer.class
-reports\ExtentReporterNG.class
 common\utilities\SeleniumActions.class
 common\utilities\WaitUtils.class
-exl\testdata\ExcelDataProvider.class
 pages\ApplyPage.class
 common\utilities\TestUtils.class
+pages\ConnectPage.class
+reports\ExtentReporterNG.class
+exl\testdata\ExcelDataProvider.class

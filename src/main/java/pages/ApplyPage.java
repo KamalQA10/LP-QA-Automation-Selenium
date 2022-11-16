@@ -31,6 +31,7 @@ public class ApplyPage extends TestBase {
 	@FindBy(id = "lastName") WebElement LastName;
 	@FindBy(id = "dob") WebElement DOB;
 	@FindBy(id = "phone") WebElement PhoneNumber;
+	@FindBy(xpath = "//span[text()=' Invalid phone']") WebElement InvalidPhone;
 	@FindBy(xpath = "//*[@class='message-validation phoneVerification col-xs-12 hide-error ValidationFail']") WebElement InvalidPhoneError;
 	@FindBy(id = "email") WebElement emailId;
 	@FindBy(xpath = "//*[@id='check-email']") WebElement CheckEmail;
@@ -101,7 +102,11 @@ public class ApplyPage extends TestBase {
 			PhoneNumber.clear();
 			SeleniumActions.ClickAction(PhoneNumber);
 			PhoneNumber.sendKeys(properties.getProperty("phone"));
-			
+			/*if(InvalidPhone.isDisplayed()) {
+				PhoneNumber.clear();
+				SeleniumActions.ClickAction(PhoneNumber);
+				PhoneNumber.sendKeys(properties.getProperty("phone"));
+			}*/		
 		}
 	}
 	public void EnterEmailId() {

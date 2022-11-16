@@ -12,4 +12,5 @@ public class Assertions extends TestBase {
 	public static void verifyButtonIsDisplayingOrNot(boolean flag) {	
 		assertTrue(flag);
 	}
+	
 }
