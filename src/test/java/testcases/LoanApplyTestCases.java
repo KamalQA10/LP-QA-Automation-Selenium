@@ -17,6 +17,7 @@ public class LoanApplyTestCases extends TestBase {
 	ConnectPage connectPage;
 	EmploymentInformationPage employmentInformationPage;
 	PaymentSetupPage paymentSetupPage;
+	ACHPage ACHpage;
 	
 		public LoanApplyTestCases() {
 		super();
@@ -31,6 +32,7 @@ public class LoanApplyTestCases extends TestBase {
 		connectPage = new ConnectPage();
 		employmentInformationPage = new EmploymentInformationPage();
 		paymentSetupPage = new PaymentSetupPage();
+		ACHpage = new ACHPage();
 	}
 
 		public void TC001_ClickOnApplyBttn(){
@@ -109,7 +111,15 @@ public class LoanApplyTestCases extends TestBase {
 		
 		public void TC007_ToValidatePaymentSetupPage() throws Exception{
 			WaitUtils.waitUntilURLexistText(driver, "PaymentSetup");
+			Assertions.verifyPageIsOpenedSucessfully("PaymentSetup");
 			paymentSetupPage.ClickOnPaymentSetupNextBtn();
+		}
+		
+		public void TC008_ToValidateACHPage() throws Exception{
+			WaitUtils.waitUntilURLexistText(driver, "Consent/HardPull/ACH");
+			Assertions.verifyPageIsOpenedSucessfully("Consent/HardPull/ACH");
+			ACHpage.ClickONACHcheckboxes();
+			ACHpage.ClickONACHsubmitBtn();
 		}
 		
 		@AfterSuite(alwaysRun = true)

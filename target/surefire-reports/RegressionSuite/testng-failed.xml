@@ -9,14 +9,9 @@
     <classes>
       <class name="testcases.LoanApplyTestCases">
         <methods>
-          <include name="TC004_ToValidateBankInformationPage"/>
-          <include name="TC006_ToValidateEmploymentInformationPage"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="TC003_ToValidateSelectOfferIsOpen"/>
-          <include name="TC005_ToValidateConnectPage"/>
           <include name="TC002_FillCustomerDetails"/>
-          <include name="TC007_ToValidatePaymentSetupPage"/>
         </methods>
       </class> <!-- testcases.LoanApplyTestCases -->
     </classes>

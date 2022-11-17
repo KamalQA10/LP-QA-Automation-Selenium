@@ -59,8 +59,11 @@ public class SeleniumActions extends TestBase {
     }
 	
 	public static void JsExecutorTillElement(WebElement element) {
-        //This will scroll the page till the element is found		
         js.executeScript("arguments[0].scrollIntoView();", element);
+	}
+	
+	public static void JsExecutorTillElements(String string) {	
+        js.executeScript("arguments[0].scrollIntoView();", string);
 	}
 	
 }

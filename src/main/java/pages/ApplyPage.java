@@ -1,15 +1,10 @@
 package pages;
 
 import java.time.Duration;
-import java.util.NoSuchElementException;
-
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.TestBase;
@@ -101,12 +96,7 @@ public class ApplyPage extends TestBase {
 		if (PhoneNumber.isEnabled()) {
 			PhoneNumber.clear();
 			SeleniumActions.ClickAction(PhoneNumber);
-			PhoneNumber.sendKeys(properties.getProperty("phone"));
-			/*if(InvalidPhone.isDisplayed()) {
-				PhoneNumber.clear();
-				SeleniumActions.ClickAction(PhoneNumber);
-				PhoneNumber.sendKeys(properties.getProperty("phone"));
-			}*/		
+			PhoneNumber.sendKeys(properties.getProperty("phone"));	
 		}
 	}
 	public void EnterEmailId() {
