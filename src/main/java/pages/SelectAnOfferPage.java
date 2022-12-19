@@ -32,7 +32,7 @@ public class SelectAnOfferPage extends TestBase {
 	}
 	
 	public void closebtnEnter4digitCode() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		try{
 		      wait
 		      .ignoring(ElementNotInteractableException.class, NoSuchElementException.class)

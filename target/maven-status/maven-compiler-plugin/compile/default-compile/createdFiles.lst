@@ -1,6 +1,8 @@
 base\TestBase.class
 pages\SelectAnOfferPage.class
+pages\ACHPage.class
 pages\BankInformationPage.class
+pages\EmploymentInformationPage.class
 common\utilities\AnnotationTransformer.class
 common\utilities\SeleniumActions.class
 common\utilities\WaitUtils.class
@@ -8,4 +10,4 @@ pages\ApplyPage.class
 common\utilities\TestUtils.class
 pages\ConnectPage.class
 reports\ExtentReporterNG.class
-exl\testdata\ExcelDataProvider.class
+pages\PaymentSetupPage.class

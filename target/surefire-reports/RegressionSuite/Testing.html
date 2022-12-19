@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Testing</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 17 17:12:51 IST 2022</td>
+<td>Started on:</td><td>Mon Dec 19 17:16:05 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>174 seconds (174846 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (30 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,45 +76,74 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.LoanApplyTestCases.TC002_FillCustomerDetails()'><b>TC002_FillCustomerDetails</b><br>Test class: testcases.LoanApplyTestCases</td>
-<td></td>
-<td>42</td>
-<td>testcases.LoanApplyTestCases@c33b74f</td></tr>
-<tr>
-<td title='testcases.LoanApplyTestCases.TC003_ToValidateSelectOfferIsOpen()'><b>TC003_ToValidateSelectOfferIsOpen</b><br>Test class: testcases.LoanApplyTestCases</td>
-<td></td>
-<td>78</td>
-<td>testcases.LoanApplyTestCases@c33b74f</td></tr>
-<tr>
-<td title='testcases.LoanApplyTestCases.TC004_ToValidateBankInformationPage()'><b>TC004_ToValidateBankInformationPage</b><br>Test class: testcases.LoanApplyTestCases</td>
-<td></td>
-<td>0</td>
-<td>testcases.LoanApplyTestCases@c33b74f</td></tr>
-<tr>
-<td title='testcases.LoanApplyTestCases.TC005_ToValidateConnectPage()'><b>TC005_ToValidateConnectPage</b><br>Test class: testcases.LoanApplyTestCases</td>
-<td></td>
-<td>15</td>
-<td>testcases.LoanApplyTestCases@c33b74f</td></tr>
-<tr>
-<td title='testcases.LoanApplyTestCases.TC008_ToValidateACHPage()'><b>TC008_ToValidateACHPage</b><br>Test class: testcases.LoanApplyTestCases</td>
-<td></td>
-<td>10</td>
-<td>testcases.LoanApplyTestCases@c33b74f</td></tr>
-<tr>
-<td title='testcases.LoanApplyTestCases.TC001_ClickOnApplyBttn()'><b>TC001_ClickOnApplyBttn</b><br>Test class: testcases.LoanApplyTestCases</td>
-<td></td>
-<td>4</td>
-<td>testcases.LoanApplyTestCases@c33b74f</td></tr>
-<tr>
-<td title='testcases.LoanApplyTestCases.TC007_ToValidatePaymentSetupPage()'><b>TC007_ToValidatePaymentSetupPage</b><br>Test class: testcases.LoanApplyTestCases</td>
-<td></td>
-<td>6</td>
-<td>testcases.LoanApplyTestCases@c33b74f</td></tr>
-<tr>
-<td title='testcases.LoanApplyTestCases.TC006_ToValidateEmploymentInformationPage()'><b>TC006_ToValidateEmploymentInformationPage</b><br>Test class: testcases.LoanApplyTestCases</td>
-<td></td>
-<td>16</td>
-<td>testcases.LoanApplyTestCases@c33b74f</td></tr>
+<td title='testcases.LoanApplyTestCases.setUp()'><b>setUp</b><br>Test class: testcases.LoanApplyTestCases</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)
+	at org.openqa.selenium.By.className(By.java:100)
+	at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:43)
+	at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:85)
+	at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:79)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:58)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:46)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:33)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:57)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:111)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:103)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:90)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:78)
+	at pages.ACHPage.&lt;init&gt;(ACHPage.java:16)
+	at testcases.LoanApplyTestCases.setUp(LoanApplyTestCases.java:34)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1847637306", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1847637306'><pre>org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)
+	at org.openqa.selenium.By.className(By.java:100)
+	at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:43)
+	at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:85)
+	at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:79)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:58)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:46)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:33)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:57)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:111)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:103)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:90)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:78)
+	at pages.ACHPage.&lt;init&gt;(ACHPage.java:16)
+	at testcases.LoanApplyTestCases.setUp(LoanApplyTestCases.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>8</td>
+<td>testcases.LoanApplyTestCases@63355449</td></tr>
 </table><p>
 </body>
 </html>

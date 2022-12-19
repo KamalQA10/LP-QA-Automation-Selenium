@@ -7,7 +7,6 @@ import common.utilities.SeleniumActions;
 import common.utilities.WaitUtils;
 import pages.*;
 
-@Test
 public class LoanApplyTestCases extends TestBase {
 
 	WaitUtils waitUtils;
@@ -34,8 +33,9 @@ public class LoanApplyTestCases extends TestBase {
 		paymentSetupPage = new PaymentSetupPage();
 		ACHpage = new ACHPage();
 	}
-
+		
 		public void TC001_ClickOnApplyBttn(){
+			System.out.println("1111111111");
 			applypage.ClickApply();
 			boolean flag = applypage.isLPLogoDisplayed();
 			Assertions.verifyPageIsOpenedSucessfully("Start");
@@ -120,6 +120,8 @@ public class LoanApplyTestCases extends TestBase {
 			Assertions.verifyPageIsOpenedSucessfully("Consent/HardPull/ACH");
 			ACHpage.ClickONACHcheckboxes();
 			ACHpage.ClickONACHsubmitBtn();
+			//WaitUtils.JSexecutor();
+			//ACHpage.RetryOpenPage();
 		}
 		
 		@AfterSuite(alwaysRun = true)

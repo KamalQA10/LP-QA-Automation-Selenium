@@ -56,6 +56,7 @@ public class ApplyPage extends TestBase {
 	} 
 	
 	public void ClickApply() {
+		//wait.until(ExpectedConditions.visibilityOf(ApplyButton));
 		if (ApplyButton.isEnabled()) {
 			wait.until(ExpectedConditions.elementToBeClickable(ApplyButton));
 			ApplyButton.click();

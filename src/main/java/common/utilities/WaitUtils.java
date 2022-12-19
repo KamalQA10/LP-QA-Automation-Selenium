@@ -31,4 +31,11 @@ public class WaitUtils extends TestBase {
     	wait.until(ExpectedConditions.urlContains(text));
     }
     
+    /*public static void JSexecutor() {
+	    JavascriptExecutor j = (JavascriptExecutor)driver;
+	    if (j.executeScript("return document.readyState").toString().equals("complete")){
+	       System.out.println("Page has loaded");
+	    }
+    }*/
+    
 }

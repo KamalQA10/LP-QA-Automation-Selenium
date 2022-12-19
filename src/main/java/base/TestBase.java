@@ -11,8 +11,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.WebDriverListener;
@@ -71,22 +69,16 @@ public class TestBase {
 		driver.get(properties.getProperty("url"));
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 
-		sele_Actions = new SeleniumActions();
+		//sele_Actions = new SeleniumActions();
 	}
 
 	private static WebDriver getDriver(String browserName) {
 		if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", TestUtils.WORKSAPCE_PATH + "//drivers//chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 			chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--start-maximized");
 			return new ChromeDriver(chromeOptions);
-		} else if (browserName.equalsIgnoreCase("FF")) {
-			System.setProperty("webdriver.gecko.driver", "C://Users/Gorya/Desktop/Krishna_study/geckodriver.exe");
-			return new FirefoxDriver();
-		} else if (browserName.equalsIgnoreCase("IE")) {
-			System.setProperty("webdriver.ie.driver", TestUtils.WORKSAPCE_PATH + "//drivers//IEDriverServer.exe");
-			return new InternetExplorerDriver();
-		}
+		} 
 		return null;
 	}
 	
