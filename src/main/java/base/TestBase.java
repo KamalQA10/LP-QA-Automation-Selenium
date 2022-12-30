@@ -11,12 +11,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.WebDriverListener;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
 import common.utilities.SeleniumActions;
 import common.utilities.TestUtils;
 
@@ -53,22 +55,24 @@ public class TestBase {
 	protected static void initializaton() {
 		String browserName = properties.getProperty("browser");
 		driver = getDriver(browserName);
+		if(browserName.equals("chrome")){
+			System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");	
+			driver = new ChromeDriver(); 
+		}
+		else if(browserName.equals("FF")){
+			System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");	
+			driver = new FirefoxDriver(); 
+		}
 
 		e_driver = new EventFiringWebDriver(driver);
-		//eventListener = new WebDriverListener();
-		//e_driver.register(eventListener);
 		driver = e_driver;
-
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtils.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(TestUtils.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-
 		driver.get(properties.getProperty("url"));
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-
 		//sele_Actions = new SeleniumActions();
 	}
 

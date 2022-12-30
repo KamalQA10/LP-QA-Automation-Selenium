@@ -6,8 +6,56 @@
   <component name="ChangeListManager">
     <list default="true" id="f2ebda66-55e2-4b4a-805c-eebdfae68d04" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/crm/qa/testcases/LoanApplyTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/crm/qa/testcases/LoanApplyTestCases.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/configurations/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configurations/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exl/testdata/ExcelDataProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/LoanApplyTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/LoanApplyTestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/crm/qa/base/TestBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/crm/qa/pages/ApplyPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/crm/qa/pages/SelectAnOfferPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/crm/qa/reports/ExtentReporterNG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/crm/qa/testdata/ExcelDataProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/crm/qa/utilities/AnnotationTransformer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/crm/qa/utilities/SeleniumActions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/crm/qa/utilities/TestUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/crm/qa/utilities/WaitUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/RegressionSuite/Testing.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/RegressionSuite/Testing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/RegressionSuite/Testing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/RegressionSuite/Testing.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/RegressionSuite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-3.6.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.crm.qa.testcases.LoanApplyTestCases.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-testcases.LoanApplyTestCases.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/RegressionSuite/Testing.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/RegressionSuite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/RegressionSuite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/RegressionSuite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/RegressionSuite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/RegressionSuite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/RegressionSuite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/RegressionSuite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/RegressionSuite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/RegressionSuite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/RegressionSuite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/crm/qa/testcases/LoanApplyTestCases.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

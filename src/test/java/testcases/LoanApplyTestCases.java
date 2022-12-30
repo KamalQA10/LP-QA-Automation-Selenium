@@ -35,7 +35,6 @@ public class LoanApplyTestCases extends TestBase {
 	}
 		
 		public void TC001_ClickOnApplyBttn(){
-			System.out.println("1111111111");
 			applypage.ClickApply();
 			boolean flag = applypage.isLPLogoDisplayed();
 			Assertions.verifyPageIsOpenedSucessfully("Start");
